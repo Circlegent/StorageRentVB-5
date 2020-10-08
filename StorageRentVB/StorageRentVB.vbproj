@@ -87,6 +87,11 @@
     <Compile Include="CustEdit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="LateNoticesfrm.designer.vb">
+      <DependentUpon>LateNoticesfrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LateNoticesfrm.vb" />
+    <Compile Include="Settings.vb" />
     <Compile Include="UnitInfo.Designer.vb">
       <DependentUpon>UnitInfo.vb</DependentUpon>
     </Compile>
@@ -115,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustEdit.resx">
       <DependentUpon>CustEdit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LateNoticesfrm.resx">
+      <DependentUpon>LateNoticesfrm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnitInfo.resx">
       <DependentUpon>UnitInfo.vb</DependentUpon>
