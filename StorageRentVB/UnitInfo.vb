@@ -150,7 +150,11 @@ Public Class UnitInfo
         newduedate_txt.Text = NewDueDate
         MsgBox(Msg)
         AmtPaid_txt.Text = Number * rentamount_txt.Text
+#Disable Warning BC42104 ' Variable is used before it has been assigned a value
+#Disable Warning BC42104 ' Variable is used before it has been assigned a value
         Test_lbl.Text = PaymentMethod + CheckNumber
+#Enable Warning BC42104 ' Variable is used before it has been assigned a value
+#Enable Warning BC42104 ' Variable is used before it has been assigned a value
         Dim updateQuery As String = "UPDATE dbo.StallNum SET DueDate = @DueDate WHERE StallNum = @StallNum"
         Dim con1 As New SqlConnection()
         Dim cmd1 As New SqlCommand(updateQuery)
