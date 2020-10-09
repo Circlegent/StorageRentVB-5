@@ -173,4 +173,16 @@ Public Class HMSMain
         obj5.CusID = id_lbl.Text
         obj5.Show()
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim obj5 As New LateNotice
+
+        ' obj5.RBCheck_rbtn.Visible = False
+        ' obj5.RBCash_rbtn.Visible = False
+        ' obj5.RBCard_rbtn.Visible = False
+        ' obj5.Payment_btn.Visible = False
+        ' obj5.unitNum_txt.Select()
+        obj5.CusID = id_lbl.Text
+        obj5.Show()
+    End Sub
 End Class

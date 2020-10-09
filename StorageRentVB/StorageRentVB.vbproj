@@ -74,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\SQLServerConnection.vb" />
+    <Compile Include="LateNotice.Designer.vb">
+      <DependentUpon>LateNotice.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LateNotice.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="HMSMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +93,6 @@
     <Compile Include="CustEdit.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LateNoticesfrm.designer.vb">
-      <DependentUpon>LateNoticesfrm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LateNoticesfrm.vb" />
-    <Compile Include="Settings.vb" />
     <Compile Include="UnitInfo.Designer.vb">
       <DependentUpon>UnitInfo.vb</DependentUpon>
     </Compile>
@@ -115,14 +116,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="LateNotice.resx">
+      <DependentUpon>LateNotice.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HMSMain.resx">
       <DependentUpon>HMSMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustEdit.resx">
       <DependentUpon>CustEdit.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LateNoticesfrm.resx">
-      <DependentUpon>LateNoticesfrm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UnitInfo.resx">
       <DependentUpon>UnitInfo.vb</DependentUpon>

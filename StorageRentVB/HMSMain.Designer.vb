@@ -55,6 +55,7 @@ Partial Class HMSMain
         Me.DLSS_txt = New System.Windows.Forms.TextBox()
         Me.Phone_txt = New System.Windows.Forms.TextBox()
         Me.Phone_lbl = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.rentergrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StallGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PayGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -328,7 +329,7 @@ Partial Class HMSMain
         'id_lbl
         '
         Me.id_lbl.AutoSize = True
-        Me.id_lbl.Location = New System.Drawing.Point(857, 112)
+        Me.id_lbl.Location = New System.Drawing.Point(852, 172)
         Me.id_lbl.Name = "id_lbl"
         Me.id_lbl.Size = New System.Drawing.Size(17, 13)
         Me.id_lbl.TabIndex = 19
@@ -349,7 +350,7 @@ Partial Class HMSMain
         '
         Me.DLSS_txt.Enabled = False
         Me.DLSS_txt.Location = New System.Drawing.Point(329, 192)
-        Me.DLSS_txt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DLSS_txt.Margin = New System.Windows.Forms.Padding(2)
         Me.DLSS_txt.Name = "DLSS_txt"
         Me.DLSS_txt.Size = New System.Drawing.Size(255, 20)
         Me.DLSS_txt.TabIndex = 34
@@ -358,7 +359,7 @@ Partial Class HMSMain
         '
         Me.Phone_txt.Enabled = False
         Me.Phone_txt.Location = New System.Drawing.Point(329, 141)
-        Me.Phone_txt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Phone_txt.Margin = New System.Windows.Forms.Padding(2)
         Me.Phone_txt.Name = "Phone_txt"
         Me.Phone_txt.Size = New System.Drawing.Size(255, 20)
         Me.Phone_txt.TabIndex = 33
@@ -373,11 +374,21 @@ Partial Class HMSMain
         Me.Phone_lbl.TabIndex = 32
         Me.Phone_lbl.Text = "Phone"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(818, 79)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(88, 35)
+        Me.Button1.TabIndex = 36
+        Me.Button1.Text = "Late Notices"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'HMSMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(913, 400)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DLSS_lbl)
         Me.Controls.Add(Me.DLSS_txt)
         Me.Controls.Add(Me.Phone_txt)
@@ -453,4 +464,5 @@ Partial Class HMSMain
     Friend WithEvents DLSS_txt As TextBox
     Friend WithEvents Phone_txt As TextBox
     Friend WithEvents Phone_lbl As Label
+    Friend WithEvents Button1 As Button
 End Class

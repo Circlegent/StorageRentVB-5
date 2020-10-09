@@ -3,7 +3,7 @@ Imports System.Drawing
 Imports System.Drawing.Printing
 Imports System.Net.Mail
 
-Public Class LateNoticesfrm
+Public Class LateNotice
 
     Public Property CusID As String
     Public DueDateL As Date
@@ -144,7 +144,7 @@ Public Class LateNoticesfrm
             Dim mail As New MailMessage()
             SmtpServer.EnableSsl = True
             SmtpServer.Credentials = New _
-        Net.NetworkCredential("seangtrf@gmail.com", "Jess05Green31")
+        Net.NetworkCredential("seangtrf@gmail.com", "Jess05Green#!")
             SmtpServer.Port = 587
             SmtpServer.Host = "smtp.gmail.com"
             mail = New MailMessage()
