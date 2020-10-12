@@ -2,7 +2,9 @@
 
 Module SQLServerConnection
 
-    Public StringConnection As String = "Data Source=DESKTOP-C61AID0\SQLEXPRESS;Initial Catalog=StorageDB;Integrated Security=True"
+    ' Public StringConnection As String = "Data Source=DESKTOP-C61AID0\SQLEXPRESS;Initial Catalog=StorageDB;Integrated Security=True"
+    Public StringConnection As String = "Data Source=DESKTOP-8QJC81O\SQLEXPRESS;Initial Catalog=StorageDB;Integrated Security=True"
+
 
     Function ExecuteSQL(sql As String) As DataTable
 
