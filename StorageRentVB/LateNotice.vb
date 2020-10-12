@@ -10,6 +10,7 @@ Public Class LateNotice
     Public RentAmount As String
     'Public UnitNum As String
     Public RentDate As String
+    Public DueDateRcpt As String
     Private Sub LateNoticesfrm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ShowUserData()
 
@@ -52,7 +53,7 @@ Public Class LateNotice
             dgLate.Columns("ID").Visible = False
 
         End With
-        Dim PayData2 As DataTable = ExecuteSQL("Select ID, StallNum, PayMeth, PayDate, PayAmount FROM PayHistory WHERE ID = '" & id_lbl.Text & "'")
+        Dim PayData2 As DataTable = ExecuteSQL("Select ID, StallNum, PayMeth, PayDate, PayAmount, PaidTillDate FROM PayHistory WHERE ID = '" & id_lbl.Text & "'")
 
         With PayGrid2
             .DataSource = PayData2
@@ -61,15 +62,19 @@ Public Class LateNotice
             .Columns(2).HeaderText = "PayMeth"
             .Columns(3).HeaderText = "PayDate"
             .Columns(4).HeaderText = "PayAmount"
+            .Columns(5).HeaderText = "PayAmount"
             .Columns(0).Width = 30
             .Columns(1).Width = 68
             .Columns(2).Width = 70
             .Columns(3).Width = 110
             .Columns(4).Width = 67
+            .Columns(5).Width = 67
             PayGrid2.ColumnHeadersVisible = False
             PayGrid2.RowHeadersVisible = False
             PayGrid2.Columns("ID").Visible = False
         End With
+        dgLate_CellContentClick(dgLate, New DataGridViewCellEventArgs(0, 0))
+        dgLate.Rows(0).Selected = True
     End Sub
     Private Sub Printrtb_btn_Click(sender As Object, e As EventArgs) Handles Printrtb_btn.Click
         'Dim Printtext As String
@@ -101,7 +106,7 @@ Public Class LateNotice
         id_lbl.Text = selectedRow.Cells(0).Value.ToString()
         unitNumL_txt.Text = selectedRow.Cells(1).Value.ToString()
         rentamountL_txt.Text = selectedRow.Cells(2).Value.ToString()
-        'rentdate_txt.Text = selectedRow.Cells(3).Value.ToString()
+        rentdate_txt.Text = selectedRow.Cells(3).Value.ToString()
         duedateL_txt.Text = selectedRow.Cells(4).Value.ToString()
         DueDateL = duedateL_txt.Text
 
@@ -215,8 +220,8 @@ Public Class LateNotice
         Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
-        Dim UserData As DataTable = ExecuteSQL("Select ID, StallNum, PayMeth, PayDate, PayAmount FROM PayHistory WHERE ID = '" & id_lbl.Text & "'")
-
+        Dim UserData As DataTable = ExecuteSQL("Select ID, StallNum, PayMeth, PayDate, PayAmount, PaidTillDate FROM PayHistory WHERE ID = '" & id_lbl.Text & "'")
+        'PayGrid2.DataSource = UserData
         index = e.RowIndex
         Dim selectedRow1 As DataGridViewRow
         selectedRow1 = PayGrid2.Rows(index)
@@ -225,7 +230,9 @@ Public Class LateNotice
         unitPayment_txt.Text = selectedRow1.Cells(2).Value.ToString()
         Paytemp.Text = selectedRow1.Cells(3).Value.ToString()
         PayAmt_txt.Text = selectedRow1.Cells(4).Value.ToString()
-        'DueDateL = duedateL_txt.Text
+        rcptDueDate_txt.Text = selectedRow1.Cells(5).Value.ToString()
+
+        'DueDateL = rcptDueDate_txt.Text
 
         Dim CurrentDate As Date = Date.Now
         Dim MonthsDue As Integer
@@ -244,7 +251,7 @@ Public Class LateNotice
         rtbRcpt.Update()
         ' DueDate = DueDateL
         unitNumL_txt.Text = UnitNum
-        duedateL_txt.Text = DueDateL
+        'rcptDueDate_txt.Text = DueDateL
 
         MonthsDue = DateDiff("m", DueDateL, CurrentDate)
         DaysOver = DateDiff("d", DueDateL, CurrentDate)
@@ -264,7 +271,7 @@ Public Class LateNotice
         Intervaltype = "m"
         Dim NewDueDate As Date = DateAdd(Intervaltype, MonthsDue, DueDateL)
         AmountDue = MonthsDue * 50
-        newrentdate_txt.Text = NewDueDate
+        'rcptDueDate_txt.Text = NewDueDate
         'NewDueDate = DateAdd("m", MonthsDue, )
 
         AmtDue_txt.Text = AmountDue
@@ -279,6 +286,11 @@ Public Class LateNotice
         rtbRcpt.AppendText("Thank you for your payment for Unit " + UnitRcpt + ".  " + vbNewLine)
         rtbRcpt.AppendText("Your payment was made with " + unitPayment_txt.Text + " for the amount of " + PayAmt_txt.Text + "." + vbNewLine)
         'rtbLateNotice.AppendText("The total due to catch up this unit is $" + AmtDue_txt.Text + ".")
-        rtbRcpt.AppendText("This payment brings your rent due date to " + newrentdate_txt.Text + vbNewLine)
+        rtbRcpt.AppendText("This payment brings your rent due date to " + rcptDueDate_txt.Text + vbNewLine)
+    End Sub
+
+
+    Private Sub AmtPaid_lbl_Click(sender As Object, e As EventArgs) Handles AmtPaid_lbl.Click
+
     End Sub
 End Class

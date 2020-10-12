@@ -131,6 +131,7 @@ Public Class UnitInfo
         Dim PaymentMethod As String
         Dim CheckNumber As String
 
+
         If RBCheck_rbtn.Checked = True Then
             PaymentMethod = "Check"
             CheckNumber = InputBox("Enter number of check.")
@@ -174,7 +175,7 @@ Public Class UnitInfo
         Finally
             con.Close()
         End Try
-        Dim updateQuery2 As String = "Insert INTO dbo.PayHistory (ID, StallNum, PayMeth, PayDate, PayAmount) Values (@ID, @StallNum, @PayMeth, @PayDate, @PayAmount)"
+        Dim updateQuery2 As String = "Insert INTO dbo.PayHistory (ID, StallNum, PayMeth, PayDate, PayAmount, PaidTillDate) Values (@ID, @StallNum, @PayMeth, @PayDate, @PayAmount, @PaidTillDate)"
         Dim con2 As New SqlConnection()
         Dim cmd2 As New SqlCommand(updateQuery2)
         con2.ConnectionString = StringConnection
@@ -187,6 +188,7 @@ Public Class UnitInfo
             cmd2.Parameters.AddWithValue("@PayMeth", Test_lbl.Text)
             cmd2.Parameters.AddWithValue("@PayDate", DateTime.Now)
             cmd2.Parameters.AddWithValue("@PayAmount", AmtPaid_txt.Text)
+            cmd2.Parameters.AddWithValue("@PaidTillDate", newduedate_txt.Text)
 
             cmd2.ExecuteNonQuery()
 
