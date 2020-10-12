@@ -145,7 +145,7 @@ Public Class LateNotice
         End If
         Intervaltype = "m"
         Dim NewDueDate As Date = DateAdd(Intervaltype, MonthsDue, DueDateL)
-        AmountDue = MonthsDue * 50
+        AmountDue = MonthsDue * rentamountL_txt.Text
         newrentdate_txt.Text = NewDueDate
         'NewDueDate = DateAdd("m", MonthsDue, )
 
