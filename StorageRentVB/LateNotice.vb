@@ -73,7 +73,7 @@ Public Class LateNotice
             PayGrid2.RowHeadersVisible = False
             PayGrid2.Columns("ID").Visible = False
         End With
-        dgLate_CellContentClick(dgLate, New DataGridViewCellEventArgs(0, 0))
+        DgLate_CellContentClick(dgLate, New DataGridViewCellEventArgs(0, 0))
         dgLate.Rows(0).Selected = True
     End Sub
     Private Sub Printrtb_btn_Click(sender As Object, e As EventArgs) Handles Printrtb_btn.Click
@@ -94,7 +94,7 @@ Public Class LateNotice
         e.Graphics.DrawString(rtbRcpt.Text, font1, Brushes.Black, 100, 100)
     End Sub
 
-    Private Sub dgLate_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgLate.CellContentClick
+    Private Sub DgLate_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgLate.CellContentClick
         Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
@@ -114,10 +114,10 @@ Public Class LateNotice
         Dim MonthsDue As Integer
         Dim AmountDue As Integer
         Dim DaysOver As Integer
-        Dim DaysPast As Integer
+        'Dim DaysPast As Integer
         Dim DaysTemp As Integer
         Dim DaysTemp2 As Integer
-        Dim DueDate1 As Date
+        'Dim DueDate1 As Date
         Dim Intervaltype As String
         Dim UnitNum As String = unitNumL_txt.Text
         Dim UnitNum1 As String = unitNumL_txt.Text.Trim
@@ -171,7 +171,7 @@ Public Class LateNotice
             Dim mail As New MailMessage()
             SmtpServer.EnableSsl = True
             SmtpServer.Credentials = New _
-        Net.NetworkCredential("seangtrf@gmail.com", "Jess05Green#!")
+        Net.NetworkCredential("huffministorage@gmail.com", "Jess05G#!")
             SmtpServer.Port = 587
             SmtpServer.Host = "smtp.gmail.com"
             mail = New MailMessage()
@@ -195,20 +195,20 @@ Public Class LateNotice
 
     End Sub
 
-    Private Sub eRcpt_btn_Click(sender As Object, e As EventArgs) Handles eRcpt_btn.Click
+    Private Sub ERcpt_btn_Click(sender As Object, e As EventArgs) Handles eRcpt_btn.Click
         Try
             Dim SmtpServer As New SmtpClient()
             Dim mail As New MailMessage()
             SmtpServer.EnableSsl = True
             SmtpServer.Credentials = New _
-        Net.NetworkCredential("seangtrf@gmail.com", "Jess05Green#!")
+        Net.NetworkCredential("huffministorage@gmail.com", "Jess05G#!")
             SmtpServer.Port = 587
             SmtpServer.Host = "smtp.gmail.com"
             mail = New MailMessage()
             mail.From = New MailAddress("seangtrf@gmail.com")
             mail.To.Add("advancedprintingllc@gmail.com")
             mail.Subject = "Test Mail"
-            mail.Body = rtbLateNotice.Text
+            mail.Body = rtbRcpt.Text
             SmtpServer.Send(mail)
             MsgBox("mail send")
         Catch ex As Exception
@@ -238,10 +238,10 @@ Public Class LateNotice
         Dim MonthsDue As Integer
         Dim AmountDue As Integer
         Dim DaysOver As Integer
-        Dim DaysPast As Integer
+        'Dim DaysPast As Integer
         Dim DaysTemp As Integer
         Dim DaysTemp2 As Integer
-        Dim DueDate1 As Date
+        'Dim DueDate1 As Date
         Dim Intervaltype As String
         Dim UnitNum As String = unitNumL_txt.Text
         Dim UnitNum1 As String = unitNumL_txt.Text.Trim
