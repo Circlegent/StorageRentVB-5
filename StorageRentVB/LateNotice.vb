@@ -11,6 +11,7 @@ Public Class LateNotice
     'Public UnitNum As String
     Public RentDate As String
     Public DueDateRcpt As String
+    Public ClientEmail As String
     Private Sub LateNoticesfrm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ShowUserData()
 
@@ -34,7 +35,7 @@ Public Class LateNotice
             Me.zip_txt.Text = Convert.ToString(Data2("Zip"))
             Me.email_txt.Text = Convert.ToString(Data2("Email"))
         End While
-
+        ClientEmail = email_txt.Text
         Dim UserData1 As DataTable = ExecuteSQL("Select ID, StallNum, Rent, DateRented, DueDate FROM StallNum WHERE ID = '" & id_lbl.Text & "'")
 
         With dgLate
@@ -175,12 +176,12 @@ Public Class LateNotice
             SmtpServer.Port = 587
             SmtpServer.Host = "smtp.gmail.com"
             mail = New MailMessage()
-            mail.From = New MailAddress("seangtrf@gmail.com")
-            mail.To.Add("advancedprintingllc@gmail.com")
-            mail.Subject = "Test Mail"
+            mail.From = New MailAddress("huffministorage@gmail.com")
+            mail.To.Add(ClientEmail) '("advancedprintingllc@gmail.com")
+            mail.Subject = "Huff Mini Storage -Late Rent Notice"
             mail.Body = rtbLateNotice.Text
             SmtpServer.Send(mail)
-            MsgBox("mail send")
+            MsgBox("Late Notice E-mail sent")
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
@@ -205,12 +206,12 @@ Public Class LateNotice
             SmtpServer.Port = 587
             SmtpServer.Host = "smtp.gmail.com"
             mail = New MailMessage()
-            mail.From = New MailAddress("seangtrf@gmail.com")
-            mail.To.Add("advancedprintingllc@gmail.com")
-            mail.Subject = "Test Mail"
+            mail.From = New MailAddress("huffministorage@gmail.com")
+            mail.To.Add(ClientEmail) '("advancedprintingllc@gmail.com")
+            mail.Subject = "Payment Receipt Notice"
             mail.Body = rtbRcpt.Text
             SmtpServer.Send(mail)
-            MsgBox("mail send")
+            MsgBox("Receipt E-mail sent")
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
