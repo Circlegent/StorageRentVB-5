@@ -56,15 +56,23 @@ Partial Class HMSMain
         Me.Phone_txt = New System.Windows.Forms.TextBox()
         Me.Phone_lbl = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DatabaseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PaymentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewEntryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.rentergrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StallGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PayGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'customer_txt
         '
         Me.customer_txt.Enabled = False
-        Me.customer_txt.Location = New System.Drawing.Point(329, 35)
+        Me.customer_txt.Location = New System.Drawing.Point(327, 56)
         Me.customer_txt.Name = "customer_txt"
         Me.customer_txt.Size = New System.Drawing.Size(255, 20)
         Me.customer_txt.TabIndex = 1
@@ -72,7 +80,7 @@ Partial Class HMSMain
         'Customer_lbl
         '
         Me.Customer_lbl.AutoSize = True
-        Me.Customer_lbl.Location = New System.Drawing.Point(263, 42)
+        Me.Customer_lbl.Location = New System.Drawing.Point(261, 63)
         Me.Customer_lbl.Name = "Customer_lbl"
         Me.Customer_lbl.Size = New System.Drawing.Size(51, 13)
         Me.Customer_lbl.TabIndex = 2
@@ -81,7 +89,7 @@ Partial Class HMSMain
         'Address_lbl
         '
         Me.Address_lbl.AutoSize = True
-        Me.Address_lbl.Location = New System.Drawing.Point(263, 68)
+        Me.Address_lbl.Location = New System.Drawing.Point(261, 89)
         Me.Address_lbl.Name = "Address_lbl"
         Me.Address_lbl.Size = New System.Drawing.Size(45, 13)
         Me.Address_lbl.TabIndex = 4
@@ -90,7 +98,7 @@ Partial Class HMSMain
         'address_txt
         '
         Me.address_txt.Enabled = False
-        Me.address_txt.Location = New System.Drawing.Point(329, 61)
+        Me.address_txt.Location = New System.Drawing.Point(327, 82)
         Me.address_txt.Name = "address_txt"
         Me.address_txt.Size = New System.Drawing.Size(255, 20)
         Me.address_txt.TabIndex = 3
@@ -98,7 +106,7 @@ Partial Class HMSMain
         'City_lbl
         '
         Me.City_lbl.AutoSize = True
-        Me.City_lbl.Location = New System.Drawing.Point(263, 94)
+        Me.City_lbl.Location = New System.Drawing.Point(261, 115)
         Me.City_lbl.Name = "City_lbl"
         Me.City_lbl.Size = New System.Drawing.Size(24, 13)
         Me.City_lbl.TabIndex = 6
@@ -107,7 +115,7 @@ Partial Class HMSMain
         'city_txt
         '
         Me.city_txt.Enabled = False
-        Me.city_txt.Location = New System.Drawing.Point(329, 87)
+        Me.city_txt.Location = New System.Drawing.Point(327, 108)
         Me.city_txt.Name = "city_txt"
         Me.city_txt.Size = New System.Drawing.Size(255, 20)
         Me.city_txt.TabIndex = 5
@@ -115,7 +123,7 @@ Partial Class HMSMain
         'State_lbl
         '
         Me.State_lbl.AutoSize = True
-        Me.State_lbl.Location = New System.Drawing.Point(263, 119)
+        Me.State_lbl.Location = New System.Drawing.Point(261, 140)
         Me.State_lbl.Name = "State_lbl"
         Me.State_lbl.Size = New System.Drawing.Size(32, 13)
         Me.State_lbl.TabIndex = 8
@@ -124,7 +132,7 @@ Partial Class HMSMain
         'state_txt
         '
         Me.state_txt.Enabled = False
-        Me.state_txt.Location = New System.Drawing.Point(329, 113)
+        Me.state_txt.Location = New System.Drawing.Point(327, 134)
         Me.state_txt.Name = "state_txt"
         Me.state_txt.Size = New System.Drawing.Size(41, 20)
         Me.state_txt.TabIndex = 7
@@ -132,7 +140,7 @@ Partial Class HMSMain
         'Zip_lbl
         '
         Me.Zip_lbl.AutoSize = True
-        Me.Zip_lbl.Location = New System.Drawing.Point(375, 116)
+        Me.Zip_lbl.Location = New System.Drawing.Point(373, 137)
         Me.Zip_lbl.Name = "Zip_lbl"
         Me.Zip_lbl.Size = New System.Drawing.Size(22, 13)
         Me.Zip_lbl.TabIndex = 10
@@ -141,7 +149,7 @@ Partial Class HMSMain
         'zip_txt
         '
         Me.zip_txt.Enabled = False
-        Me.zip_txt.Location = New System.Drawing.Point(402, 112)
+        Me.zip_txt.Location = New System.Drawing.Point(400, 133)
         Me.zip_txt.Name = "zip_txt"
         Me.zip_txt.Size = New System.Drawing.Size(182, 20)
         Me.zip_txt.TabIndex = 9
@@ -149,7 +157,7 @@ Partial Class HMSMain
         'Email_lbl
         '
         Me.Email_lbl.AutoSize = True
-        Me.Email_lbl.Location = New System.Drawing.Point(263, 172)
+        Me.Email_lbl.Location = New System.Drawing.Point(261, 193)
         Me.Email_lbl.Name = "Email_lbl"
         Me.Email_lbl.Size = New System.Drawing.Size(35, 13)
         Me.Email_lbl.TabIndex = 12
@@ -158,14 +166,14 @@ Partial Class HMSMain
         'email_txt
         '
         Me.email_txt.Enabled = False
-        Me.email_txt.Location = New System.Drawing.Point(329, 165)
+        Me.email_txt.Location = New System.Drawing.Point(327, 186)
         Me.email_txt.Name = "email_txt"
         Me.email_txt.Size = New System.Drawing.Size(255, 20)
         Me.email_txt.TabIndex = 11
         '
         'updateunit_btn
         '
-        Me.updateunit_btn.Location = New System.Drawing.Point(817, 34)
+        Me.updateunit_btn.Location = New System.Drawing.Point(815, 55)
         Me.updateunit_btn.Name = "updateunit_btn"
         Me.updateunit_btn.Size = New System.Drawing.Size(88, 35)
         Me.updateunit_btn.TabIndex = 14
@@ -181,7 +189,7 @@ Partial Class HMSMain
         Me.rentergrid1.BackgroundColor = System.Drawing.SystemColors.Menu
         Me.rentergrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.rentergrid1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
-        Me.rentergrid1.Location = New System.Drawing.Point(13, 11)
+        Me.rentergrid1.Location = New System.Drawing.Point(11, 32)
         Me.rentergrid1.Margin = New System.Windows.Forms.Padding(0)
         Me.rentergrid1.MultiSelect = False
         Me.rentergrid1.Name = "rentergrid1"
@@ -192,7 +200,7 @@ Partial Class HMSMain
         '
         'end_btn
         '
-        Me.end_btn.Location = New System.Drawing.Point(818, 363)
+        Me.end_btn.Location = New System.Drawing.Point(816, 384)
         Me.end_btn.Name = "end_btn"
         Me.end_btn.Size = New System.Drawing.Size(88, 33)
         Me.end_btn.TabIndex = 17
@@ -207,7 +215,7 @@ Partial Class HMSMain
         Me.StallGrid1.AllowUserToResizeRows = False
         Me.StallGrid1.BackgroundColor = System.Drawing.SystemColors.MenuBar
         Me.StallGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.StallGrid1.Location = New System.Drawing.Point(590, 35)
+        Me.StallGrid1.Location = New System.Drawing.Point(588, 56)
         Me.StallGrid1.Name = "StallGrid1"
         Me.StallGrid1.RowHeadersWidth = 51
         Me.StallGrid1.Size = New System.Drawing.Size(221, 150)
@@ -215,7 +223,7 @@ Partial Class HMSMain
         '
         'CusNew_btn
         '
-        Me.CusNew_btn.Location = New System.Drawing.Point(266, 7)
+        Me.CusNew_btn.Location = New System.Drawing.Point(264, 28)
         Me.CusNew_btn.Name = "CusNew_btn"
         Me.CusNew_btn.Size = New System.Drawing.Size(75, 23)
         Me.CusNew_btn.TabIndex = 20
@@ -224,7 +232,7 @@ Partial Class HMSMain
         '
         'CusEdit_btn
         '
-        Me.CusEdit_btn.Location = New System.Drawing.Point(347, 7)
+        Me.CusEdit_btn.Location = New System.Drawing.Point(345, 28)
         Me.CusEdit_btn.Name = "CusEdit_btn"
         Me.CusEdit_btn.Size = New System.Drawing.Size(75, 23)
         Me.CusEdit_btn.TabIndex = 21
@@ -233,7 +241,7 @@ Partial Class HMSMain
         '
         'CusDelete_btn
         '
-        Me.CusDelete_btn.Location = New System.Drawing.Point(509, 7)
+        Me.CusDelete_btn.Location = New System.Drawing.Point(507, 28)
         Me.CusDelete_btn.Name = "CusDelete_btn"
         Me.CusDelete_btn.Size = New System.Drawing.Size(75, 23)
         Me.CusDelete_btn.TabIndex = 22
@@ -242,7 +250,7 @@ Partial Class HMSMain
         '
         'CusPayment_btn
         '
-        Me.CusPayment_btn.Location = New System.Drawing.Point(428, 7)
+        Me.CusPayment_btn.Location = New System.Drawing.Point(426, 28)
         Me.CusPayment_btn.Name = "CusPayment_btn"
         Me.CusPayment_btn.Size = New System.Drawing.Size(75, 23)
         Me.CusPayment_btn.TabIndex = 23
@@ -257,7 +265,7 @@ Partial Class HMSMain
         Me.PayGrid1.AllowUserToResizeRows = False
         Me.PayGrid1.BackgroundColor = System.Drawing.SystemColors.Menu
         Me.PayGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.PayGrid1.Location = New System.Drawing.Point(266, 231)
+        Me.PayGrid1.Location = New System.Drawing.Point(264, 252)
         Me.PayGrid1.Name = "PayGrid1"
         Me.PayGrid1.RowHeadersWidth = 51
         Me.PayGrid1.Size = New System.Drawing.Size(318, 165)
@@ -266,7 +274,7 @@ Partial Class HMSMain
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(275, 213)
+        Me.Label1.Location = New System.Drawing.Point(273, 234)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(26, 13)
         Me.Label1.TabIndex = 25
@@ -275,7 +283,7 @@ Partial Class HMSMain
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(353, 213)
+        Me.Label2.Location = New System.Drawing.Point(351, 234)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(43, 13)
         Me.Label2.TabIndex = 26
@@ -284,7 +292,7 @@ Partial Class HMSMain
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(444, 213)
+        Me.Label3.Location = New System.Drawing.Point(442, 234)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(33, 13)
         Me.Label3.TabIndex = 27
@@ -293,7 +301,7 @@ Partial Class HMSMain
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(520, 213)
+        Me.Label4.Location = New System.Drawing.Point(518, 234)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(43, 13)
         Me.Label4.TabIndex = 28
@@ -302,7 +310,7 @@ Partial Class HMSMain
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(602, 17)
+        Me.Label5.Location = New System.Drawing.Point(600, 38)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(26, 13)
         Me.Label5.TabIndex = 29
@@ -311,7 +319,7 @@ Partial Class HMSMain
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(652, 17)
+        Me.Label6.Location = New System.Drawing.Point(650, 38)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(52, 13)
         Me.Label6.TabIndex = 30
@@ -320,7 +328,7 @@ Partial Class HMSMain
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(722, 17)
+        Me.Label7.Location = New System.Drawing.Point(720, 38)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(53, 13)
         Me.Label7.TabIndex = 31
@@ -329,7 +337,7 @@ Partial Class HMSMain
         'id_lbl
         '
         Me.id_lbl.AutoSize = True
-        Me.id_lbl.Location = New System.Drawing.Point(852, 172)
+        Me.id_lbl.Location = New System.Drawing.Point(850, 193)
         Me.id_lbl.Name = "id_lbl"
         Me.id_lbl.Size = New System.Drawing.Size(17, 13)
         Me.id_lbl.TabIndex = 19
@@ -339,7 +347,7 @@ Partial Class HMSMain
         'DLSS_lbl
         '
         Me.DLSS_lbl.AutoSize = True
-        Me.DLSS_lbl.Location = New System.Drawing.Point(262, 196)
+        Me.DLSS_lbl.Location = New System.Drawing.Point(260, 217)
         Me.DLSS_lbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.DLSS_lbl.Name = "DLSS_lbl"
         Me.DLSS_lbl.Size = New System.Drawing.Size(56, 13)
@@ -349,7 +357,7 @@ Partial Class HMSMain
         'DLSS_txt
         '
         Me.DLSS_txt.Enabled = False
-        Me.DLSS_txt.Location = New System.Drawing.Point(329, 192)
+        Me.DLSS_txt.Location = New System.Drawing.Point(327, 213)
         Me.DLSS_txt.Margin = New System.Windows.Forms.Padding(2)
         Me.DLSS_txt.Name = "DLSS_txt"
         Me.DLSS_txt.Size = New System.Drawing.Size(255, 20)
@@ -358,7 +366,7 @@ Partial Class HMSMain
         'Phone_txt
         '
         Me.Phone_txt.Enabled = False
-        Me.Phone_txt.Location = New System.Drawing.Point(329, 141)
+        Me.Phone_txt.Location = New System.Drawing.Point(327, 162)
         Me.Phone_txt.Margin = New System.Windows.Forms.Padding(2)
         Me.Phone_txt.Name = "Phone_txt"
         Me.Phone_txt.Size = New System.Drawing.Size(255, 20)
@@ -367,7 +375,7 @@ Partial Class HMSMain
         'Phone_lbl
         '
         Me.Phone_lbl.AutoSize = True
-        Me.Phone_lbl.Location = New System.Drawing.Point(263, 145)
+        Me.Phone_lbl.Location = New System.Drawing.Point(261, 166)
         Me.Phone_lbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Phone_lbl.Name = "Phone_lbl"
         Me.Phone_lbl.Size = New System.Drawing.Size(38, 13)
@@ -376,18 +384,66 @@ Partial Class HMSMain
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(818, 79)
+        Me.Button1.Location = New System.Drawing.Point(816, 100)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(88, 35)
         Me.Button1.TabIndex = 36
         Me.Button1.Text = "Late Notices"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DatabaseToolStripMenuItem, Me.OptionsToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.Size = New System.Drawing.Size(913, 24)
+        Me.MenuStrip1.TabIndex = 37
+        Me.MenuStrip1.Text = "MenuStrip1"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PaymentToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'DatabaseToolStripMenuItem
+        '
+        Me.DatabaseToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewEntryToolStripMenuItem})
+        Me.DatabaseToolStripMenuItem.Name = "DatabaseToolStripMenuItem"
+        Me.DatabaseToolStripMenuItem.Size = New System.Drawing.Size(67, 20)
+        Me.DatabaseToolStripMenuItem.Text = "Database"
+        '
+        'OptionsToolStripMenuItem
+        '
+        Me.OptionsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SettingsToolStripMenuItem})
+        Me.OptionsToolStripMenuItem.Name = "OptionsToolStripMenuItem"
+        Me.OptionsToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
+        Me.OptionsToolStripMenuItem.Text = "Options"
+        '
+        'PaymentToolStripMenuItem
+        '
+        Me.PaymentToolStripMenuItem.Name = "PaymentToolStripMenuItem"
+        Me.PaymentToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.PaymentToolStripMenuItem.Text = "Payment"
+        '
+        'NewEntryToolStripMenuItem
+        '
+        Me.NewEntryToolStripMenuItem.Name = "NewEntryToolStripMenuItem"
+        Me.NewEntryToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.NewEntryToolStripMenuItem.Text = "New Entry"
+        '
+        'SettingsToolStripMenuItem
+        '
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
         'HMSMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(913, 400)
+        Me.ClientSize = New System.Drawing.Size(913, 431)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DLSS_lbl)
         Me.Controls.Add(Me.DLSS_txt)
@@ -422,11 +478,15 @@ Partial Class HMSMain
         Me.Controls.Add(Me.address_txt)
         Me.Controls.Add(Me.Customer_lbl)
         Me.Controls.Add(Me.customer_txt)
+        Me.Controls.Add(Me.MenuStrip1)
+        Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "HMSMain"
         Me.Text = "Huff Mini Storage - Main"
         CType(Me.rentergrid1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.StallGrid1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PayGrid1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -465,4 +525,11 @@ Partial Class HMSMain
     Friend WithEvents Phone_txt As TextBox
     Friend WithEvents Phone_lbl As Label
     Friend WithEvents Button1 As Button
+    Friend WithEvents MenuStrip1 As MenuStrip
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PaymentToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DatabaseToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents NewEntryToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
 End Class

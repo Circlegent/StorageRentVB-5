@@ -74,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection\SQLServerConnection.vb" />
+    <Compile Include="HMSStart.Designer.vb">
+      <DependentUpon>HMSStart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HMSStart.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="LateNotice.Designer.vb">
       <DependentUpon>LateNotice.vb</DependentUpon>
     </Compile>
@@ -116,6 +122,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="HMSStart.resx">
+      <DependentUpon>HMSStart.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LateNotice.resx">
       <DependentUpon>LateNotice.vb</DependentUpon>
     </EmbeddedResource>
