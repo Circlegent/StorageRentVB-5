@@ -479,7 +479,7 @@ Partial Class HMSStart
         '
         'BtnMain
         '
-        Me.BtnMain.Location = New System.Drawing.Point(602, 403)
+        Me.BtnMain.Location = New System.Drawing.Point(786, 532)
         Me.BtnMain.Name = "BtnMain"
         Me.BtnMain.Size = New System.Drawing.Size(75, 23)
         Me.BtnMain.TabIndex = 35

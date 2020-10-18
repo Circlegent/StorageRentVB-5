@@ -2,7 +2,7 @@
 
 Public Class UnitInfo
 
-    Public Property CusID As String
+    Public Property CusID As String = HMSStart.CusID
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RBCheck_rbtn.Checked = True
         ShowUserData()
@@ -17,7 +17,7 @@ Public Class UnitInfo
         Dim Data2 As SqlDataReader = cmd.ExecuteReader()
 
         While Data2.Read()
-            Me.id_lbl.Text = Convert.ToString(Data2("ID"))
+            CusID = Convert.ToString(Data2("ID"))
             Me.cusFname_txt.Text = Convert.ToString(Data2("Fname"))
             Me.cusLname_txt.Text = Convert.ToString(Data2("Lname"))
             Me.address_txt.Text = Convert.ToString(Data2("Address"))
@@ -27,7 +27,7 @@ Public Class UnitInfo
             Me.email_txt.Text = Convert.ToString(Data2("Email"))
         End While
 
-        Dim UserData1 As DataTable = ExecuteSQL("Select ID, StallNum, Rent, DateRented, DueDate FROM StallNum WHERE ID = '" & id_lbl.Text & "'")
+        Dim UserData1 As DataTable = ExecuteSQL("Select ID, StallNum, Rent, DateRented, DueDate FROM StallNum WHERE ID = '" & CusID & "'")
 
         With StallGrid2
             .DataSource = UserData1
@@ -201,5 +201,25 @@ Public Class UnitInfo
 
 
 
+    End Sub
+
+    Private Sub delunit_btn_Click(sender As Object, e As EventArgs) Handles delunit_btn.Click
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Delete FROM StallNum WHERE ID = @id AND StallNum = '" & unitNum_txt.Text & "'"
+        cmd.Parameters.Add("@id", SqlDbType.Int).Value = CusID
+
+
+        Dim answer1 As MsgBoxResult
+        answer1 = MsgBox("Do you wish to delete Stall?", MsgBoxStyle.YesNo)
+        If answer1 = MsgBoxResult.Yes Then
+            cmd.ExecuteNonQuery()
+        End If
+
+        'Me.Reload()
     End Sub
 End Class
