@@ -22,35 +22,35 @@ Partial Class HMSStart
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button13 = New System.Windows.Forms.Button()
-        Me.Button14 = New System.Windows.Forms.Button()
-        Me.Button15 = New System.Windows.Forms.Button()
-        Me.Button16 = New System.Windows.Forms.Button()
-        Me.Button17 = New System.Windows.Forms.Button()
-        Me.Button18 = New System.Windows.Forms.Button()
+        Me.StallC1 = New System.Windows.Forms.Button()
+        Me.StallC2 = New System.Windows.Forms.Button()
+        Me.StallC3 = New System.Windows.Forms.Button()
+        Me.StallC4 = New System.Windows.Forms.Button()
+        Me.StallC5 = New System.Windows.Forms.Button()
+        Me.StallC6 = New System.Windows.Forms.Button()
+        Me.StallD6 = New System.Windows.Forms.Button()
+        Me.StallD5 = New System.Windows.Forms.Button()
+        Me.StallD4 = New System.Windows.Forms.Button()
+        Me.StallD3 = New System.Windows.Forms.Button()
+        Me.StallD2 = New System.Windows.Forms.Button()
+        Me.StallD1 = New System.Windows.Forms.Button()
+        Me.StallB6 = New System.Windows.Forms.Button()
+        Me.StallB5 = New System.Windows.Forms.Button()
+        Me.StallB4 = New System.Windows.Forms.Button()
+        Me.StallB3 = New System.Windows.Forms.Button()
+        Me.StallB2 = New System.Windows.Forms.Button()
+        Me.StallB1 = New System.Windows.Forms.Button()
         Me.StallA6 = New System.Windows.Forms.Button()
         Me.StallA5 = New System.Windows.Forms.Button()
         Me.StallA4 = New System.Windows.Forms.Button()
         Me.StallA3 = New System.Windows.Forms.Button()
         Me.StallA2 = New System.Windows.Forms.Button()
         Me.StallA1 = New System.Windows.Forms.Button()
-        Me.Button25 = New System.Windows.Forms.Button()
-        Me.Button26 = New System.Windows.Forms.Button()
-        Me.Button27 = New System.Windows.Forms.Button()
-        Me.Button28 = New System.Windows.Forms.Button()
-        Me.Button29 = New System.Windows.Forms.Button()
+        Me.StallB11 = New System.Windows.Forms.Button()
+        Me.StallB10 = New System.Windows.Forms.Button()
+        Me.StallB9 = New System.Windows.Forms.Button()
+        Me.StallB8 = New System.Windows.Forms.Button()
+        Me.StallB7 = New System.Windows.Forms.Button()
         Me.StallA11 = New System.Windows.Forms.Button()
         Me.StallA10 = New System.Windows.Forms.Button()
         Me.StallA9 = New System.Windows.Forms.Button()
@@ -67,191 +67,191 @@ Partial Class HMSStart
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'Button1
+        'StallC1
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(17, 335)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 146)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "C1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.StallC1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallC1.Location = New System.Drawing.Point(17, 335)
+        Me.StallC1.Name = "StallC1"
+        Me.StallC1.Size = New System.Drawing.Size(75, 146)
+        Me.StallC1.TabIndex = 0
+        Me.StallC1.Text = "C1"
+        Me.StallC1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'StallC2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(94, 335)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 146)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "C2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.StallC2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallC2.Location = New System.Drawing.Point(94, 335)
+        Me.StallC2.Name = "StallC2"
+        Me.StallC2.Size = New System.Drawing.Size(75, 146)
+        Me.StallC2.TabIndex = 1
+        Me.StallC2.Text = "C2"
+        Me.StallC2.UseVisualStyleBackColor = True
         '
-        'Button3
+        'StallC3
         '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(171, 335)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 146)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "C3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.StallC3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallC3.Location = New System.Drawing.Point(171, 335)
+        Me.StallC3.Name = "StallC3"
+        Me.StallC3.Size = New System.Drawing.Size(75, 146)
+        Me.StallC3.TabIndex = 2
+        Me.StallC3.Text = "C3"
+        Me.StallC3.UseVisualStyleBackColor = True
         '
-        'Button4
+        'StallC4
         '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(248, 335)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 146)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "C4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.StallC4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallC4.Location = New System.Drawing.Point(248, 335)
+        Me.StallC4.Name = "StallC4"
+        Me.StallC4.Size = New System.Drawing.Size(75, 146)
+        Me.StallC4.TabIndex = 3
+        Me.StallC4.Text = "C4"
+        Me.StallC4.UseVisualStyleBackColor = True
         '
-        'Button5
+        'StallC5
         '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(324, 335)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 146)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "C5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.StallC5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallC5.Location = New System.Drawing.Point(324, 335)
+        Me.StallC5.Name = "StallC5"
+        Me.StallC5.Size = New System.Drawing.Size(75, 146)
+        Me.StallC5.TabIndex = 4
+        Me.StallC5.Text = "C5"
+        Me.StallC5.UseVisualStyleBackColor = True
         '
-        'Button6
+        'StallC6
         '
-        Me.Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(400, 335)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 146)
-        Me.Button6.TabIndex = 5
-        Me.Button6.Text = "C6"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.StallC6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallC6.Location = New System.Drawing.Point(400, 335)
+        Me.StallC6.Name = "StallC6"
+        Me.StallC6.Size = New System.Drawing.Size(75, 146)
+        Me.StallC6.TabIndex = 5
+        Me.StallC6.Text = "C6"
+        Me.StallC6.UseVisualStyleBackColor = True
         '
-        'Button7
+        'StallD6
         '
-        Me.Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(400, 482)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(75, 146)
-        Me.Button7.TabIndex = 11
-        Me.Button7.Text = "D6"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.StallD6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallD6.Location = New System.Drawing.Point(400, 482)
+        Me.StallD6.Name = "StallD6"
+        Me.StallD6.Size = New System.Drawing.Size(75, 146)
+        Me.StallD6.TabIndex = 11
+        Me.StallD6.Text = "D6"
+        Me.StallD6.UseVisualStyleBackColor = True
         '
-        'Button8
+        'StallD5
         '
-        Me.Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button8.Location = New System.Drawing.Point(324, 482)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(75, 146)
-        Me.Button8.TabIndex = 10
-        Me.Button8.Text = "D5"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.StallD5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallD5.Location = New System.Drawing.Point(324, 482)
+        Me.StallD5.Name = "StallD5"
+        Me.StallD5.Size = New System.Drawing.Size(75, 146)
+        Me.StallD5.TabIndex = 10
+        Me.StallD5.Text = "D5"
+        Me.StallD5.UseVisualStyleBackColor = True
         '
-        'Button9
+        'StallD4
         '
-        Me.Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button9.Location = New System.Drawing.Point(248, 482)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(75, 146)
-        Me.Button9.TabIndex = 9
-        Me.Button9.Text = "D4"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.StallD4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallD4.Location = New System.Drawing.Point(248, 482)
+        Me.StallD4.Name = "StallD4"
+        Me.StallD4.Size = New System.Drawing.Size(75, 146)
+        Me.StallD4.TabIndex = 9
+        Me.StallD4.Text = "D4"
+        Me.StallD4.UseVisualStyleBackColor = True
         '
-        'Button10
+        'StallD3
         '
-        Me.Button10.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button10.Location = New System.Drawing.Point(171, 482)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(75, 146)
-        Me.Button10.TabIndex = 8
-        Me.Button10.Text = "D3"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.StallD3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallD3.Location = New System.Drawing.Point(171, 482)
+        Me.StallD3.Name = "StallD3"
+        Me.StallD3.Size = New System.Drawing.Size(75, 146)
+        Me.StallD3.TabIndex = 8
+        Me.StallD3.Text = "D3"
+        Me.StallD3.UseVisualStyleBackColor = True
         '
-        'Button11
+        'StallD2
         '
-        Me.Button11.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button11.Location = New System.Drawing.Point(94, 482)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(75, 146)
-        Me.Button11.TabIndex = 7
-        Me.Button11.Text = "D2"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.StallD2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallD2.Location = New System.Drawing.Point(94, 482)
+        Me.StallD2.Name = "StallD2"
+        Me.StallD2.Size = New System.Drawing.Size(75, 146)
+        Me.StallD2.TabIndex = 7
+        Me.StallD2.Text = "D2"
+        Me.StallD2.UseVisualStyleBackColor = True
         '
-        'Button12
+        'StallD1
         '
-        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button12.Location = New System.Drawing.Point(17, 482)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(75, 146)
-        Me.Button12.TabIndex = 6
-        Me.Button12.Text = "D1"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.StallD1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallD1.Location = New System.Drawing.Point(17, 482)
+        Me.StallD1.Name = "StallD1"
+        Me.StallD1.Size = New System.Drawing.Size(75, 146)
+        Me.StallD1.TabIndex = 6
+        Me.StallD1.Text = "D1"
+        Me.StallD1.UseVisualStyleBackColor = True
         '
-        'Button13
+        'StallB6
         '
-        Me.Button13.FlatAppearance.BorderSize = 3
-        Me.Button13.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button13.Location = New System.Drawing.Point(402, 177)
-        Me.Button13.Name = "Button13"
-        Me.Button13.Size = New System.Drawing.Size(75, 146)
-        Me.Button13.TabIndex = 23
-        Me.Button13.Text = "B6"
-        Me.Button13.UseVisualStyleBackColor = True
+        Me.StallB6.FlatAppearance.BorderSize = 3
+        Me.StallB6.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB6.Location = New System.Drawing.Point(402, 177)
+        Me.StallB6.Name = "StallB6"
+        Me.StallB6.Size = New System.Drawing.Size(75, 146)
+        Me.StallB6.TabIndex = 23
+        Me.StallB6.Text = "B6"
+        Me.StallB6.UseVisualStyleBackColor = True
         '
-        'Button14
+        'StallB5
         '
-        Me.Button14.FlatAppearance.BorderSize = 3
-        Me.Button14.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button14.Location = New System.Drawing.Point(326, 177)
-        Me.Button14.Name = "Button14"
-        Me.Button14.Size = New System.Drawing.Size(75, 146)
-        Me.Button14.TabIndex = 22
-        Me.Button14.Text = "B5"
-        Me.Button14.UseVisualStyleBackColor = True
+        Me.StallB5.FlatAppearance.BorderSize = 3
+        Me.StallB5.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB5.Location = New System.Drawing.Point(326, 177)
+        Me.StallB5.Name = "StallB5"
+        Me.StallB5.Size = New System.Drawing.Size(75, 146)
+        Me.StallB5.TabIndex = 22
+        Me.StallB5.Text = "B5"
+        Me.StallB5.UseVisualStyleBackColor = True
         '
-        'Button15
+        'StallB4
         '
-        Me.Button15.FlatAppearance.BorderSize = 3
-        Me.Button15.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button15.Location = New System.Drawing.Point(250, 177)
-        Me.Button15.Name = "Button15"
-        Me.Button15.Size = New System.Drawing.Size(75, 146)
-        Me.Button15.TabIndex = 21
-        Me.Button15.Text = "B4"
-        Me.Button15.UseVisualStyleBackColor = True
+        Me.StallB4.FlatAppearance.BorderSize = 3
+        Me.StallB4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB4.Location = New System.Drawing.Point(250, 177)
+        Me.StallB4.Name = "StallB4"
+        Me.StallB4.Size = New System.Drawing.Size(75, 146)
+        Me.StallB4.TabIndex = 21
+        Me.StallB4.Text = "B4"
+        Me.StallB4.UseVisualStyleBackColor = True
         '
-        'Button16
+        'StallB3
         '
-        Me.Button16.FlatAppearance.BorderSize = 3
-        Me.Button16.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button16.Location = New System.Drawing.Point(173, 177)
-        Me.Button16.Name = "Button16"
-        Me.Button16.Size = New System.Drawing.Size(75, 146)
-        Me.Button16.TabIndex = 20
-        Me.Button16.Text = "B3"
-        Me.Button16.UseVisualStyleBackColor = True
+        Me.StallB3.FlatAppearance.BorderSize = 3
+        Me.StallB3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB3.Location = New System.Drawing.Point(173, 177)
+        Me.StallB3.Name = "StallB3"
+        Me.StallB3.Size = New System.Drawing.Size(75, 146)
+        Me.StallB3.TabIndex = 20
+        Me.StallB3.Text = "B3"
+        Me.StallB3.UseVisualStyleBackColor = True
         '
-        'Button17
+        'StallB2
         '
-        Me.Button17.FlatAppearance.BorderSize = 3
-        Me.Button17.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button17.Location = New System.Drawing.Point(96, 177)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(75, 146)
-        Me.Button17.TabIndex = 19
-        Me.Button17.Text = "B2"
-        Me.Button17.UseVisualStyleBackColor = True
+        Me.StallB2.FlatAppearance.BorderSize = 3
+        Me.StallB2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB2.Location = New System.Drawing.Point(96, 177)
+        Me.StallB2.Name = "StallB2"
+        Me.StallB2.Size = New System.Drawing.Size(75, 146)
+        Me.StallB2.TabIndex = 19
+        Me.StallB2.Text = "B2"
+        Me.StallB2.UseVisualStyleBackColor = True
         '
-        'Button18
+        'StallB1
         '
-        Me.Button18.FlatAppearance.BorderSize = 3
-        Me.Button18.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button18.Location = New System.Drawing.Point(19, 177)
-        Me.Button18.Name = "Button18"
-        Me.Button18.Size = New System.Drawing.Size(75, 146)
-        Me.Button18.TabIndex = 18
-        Me.Button18.Text = "B1"
-        Me.Button18.UseVisualStyleBackColor = True
+        Me.StallB1.FlatAppearance.BorderSize = 3
+        Me.StallB1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB1.Location = New System.Drawing.Point(19, 177)
+        Me.StallB1.Name = "StallB1"
+        Me.StallB1.Size = New System.Drawing.Size(75, 146)
+        Me.StallB1.TabIndex = 18
+        Me.StallB1.Text = "B1"
+        Me.StallB1.UseVisualStyleBackColor = True
         '
         'StallA6
         '
@@ -319,60 +319,60 @@ Partial Class HMSStart
         Me.StallA1.Text = "A1"
         Me.StallA1.UseVisualStyleBackColor = True
         '
-        'Button25
+        'StallB11
         '
-        Me.Button25.FlatAppearance.BorderSize = 3
-        Me.Button25.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button25.Location = New System.Drawing.Point(786, 177)
-        Me.Button25.Name = "Button25"
-        Me.Button25.Size = New System.Drawing.Size(75, 146)
-        Me.Button25.TabIndex = 33
-        Me.Button25.Text = "B11"
-        Me.Button25.UseVisualStyleBackColor = True
+        Me.StallB11.FlatAppearance.BorderSize = 3
+        Me.StallB11.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB11.Location = New System.Drawing.Point(786, 177)
+        Me.StallB11.Name = "StallB11"
+        Me.StallB11.Size = New System.Drawing.Size(75, 146)
+        Me.StallB11.TabIndex = 33
+        Me.StallB11.Text = "B11"
+        Me.StallB11.UseVisualStyleBackColor = True
         '
-        'Button26
+        'StallB10
         '
-        Me.Button26.FlatAppearance.BorderSize = 3
-        Me.Button26.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button26.Location = New System.Drawing.Point(710, 177)
-        Me.Button26.Name = "Button26"
-        Me.Button26.Size = New System.Drawing.Size(75, 146)
-        Me.Button26.TabIndex = 32
-        Me.Button26.Text = "B10"
-        Me.Button26.UseVisualStyleBackColor = True
+        Me.StallB10.FlatAppearance.BorderSize = 3
+        Me.StallB10.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB10.Location = New System.Drawing.Point(710, 177)
+        Me.StallB10.Name = "StallB10"
+        Me.StallB10.Size = New System.Drawing.Size(75, 146)
+        Me.StallB10.TabIndex = 32
+        Me.StallB10.Text = "B10"
+        Me.StallB10.UseVisualStyleBackColor = True
         '
-        'Button27
+        'StallB9
         '
-        Me.Button27.FlatAppearance.BorderSize = 3
-        Me.Button27.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button27.Location = New System.Drawing.Point(634, 177)
-        Me.Button27.Name = "Button27"
-        Me.Button27.Size = New System.Drawing.Size(75, 146)
-        Me.Button27.TabIndex = 31
-        Me.Button27.Text = "B9"
-        Me.Button27.UseVisualStyleBackColor = True
+        Me.StallB9.FlatAppearance.BorderSize = 3
+        Me.StallB9.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB9.Location = New System.Drawing.Point(634, 177)
+        Me.StallB9.Name = "StallB9"
+        Me.StallB9.Size = New System.Drawing.Size(75, 146)
+        Me.StallB9.TabIndex = 31
+        Me.StallB9.Text = "B9"
+        Me.StallB9.UseVisualStyleBackColor = True
         '
-        'Button28
+        'StallB8
         '
-        Me.Button28.FlatAppearance.BorderSize = 3
-        Me.Button28.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button28.Location = New System.Drawing.Point(557, 177)
-        Me.Button28.Name = "Button28"
-        Me.Button28.Size = New System.Drawing.Size(75, 146)
-        Me.Button28.TabIndex = 30
-        Me.Button28.Text = "B8"
-        Me.Button28.UseVisualStyleBackColor = True
+        Me.StallB8.FlatAppearance.BorderSize = 3
+        Me.StallB8.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB8.Location = New System.Drawing.Point(557, 177)
+        Me.StallB8.Name = "StallB8"
+        Me.StallB8.Size = New System.Drawing.Size(75, 146)
+        Me.StallB8.TabIndex = 30
+        Me.StallB8.Text = "B8"
+        Me.StallB8.UseVisualStyleBackColor = True
         '
-        'Button29
+        'StallB7
         '
-        Me.Button29.FlatAppearance.BorderSize = 3
-        Me.Button29.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button29.Location = New System.Drawing.Point(480, 177)
-        Me.Button29.Name = "Button29"
-        Me.Button29.Size = New System.Drawing.Size(75, 146)
-        Me.Button29.TabIndex = 29
-        Me.Button29.Text = "B7"
-        Me.Button29.UseVisualStyleBackColor = True
+        Me.StallB7.FlatAppearance.BorderSize = 3
+        Me.StallB7.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.StallB7.Location = New System.Drawing.Point(480, 177)
+        Me.StallB7.Name = "StallB7"
+        Me.StallB7.Size = New System.Drawing.Size(75, 146)
+        Me.StallB7.TabIndex = 29
+        Me.StallB7.Text = "B7"
+        Me.StallB7.UseVisualStyleBackColor = True
         '
         'StallA11
         '
@@ -492,40 +492,40 @@ Partial Class HMSStart
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(894, 646)
         Me.Controls.Add(Me.BtnMain)
-        Me.Controls.Add(Me.Button25)
-        Me.Controls.Add(Me.Button26)
-        Me.Controls.Add(Me.Button27)
-        Me.Controls.Add(Me.Button28)
-        Me.Controls.Add(Me.Button29)
+        Me.Controls.Add(Me.StallB11)
+        Me.Controls.Add(Me.StallB10)
+        Me.Controls.Add(Me.StallB9)
+        Me.Controls.Add(Me.StallB8)
+        Me.Controls.Add(Me.StallB7)
         Me.Controls.Add(Me.StallA11)
         Me.Controls.Add(Me.StallA10)
         Me.Controls.Add(Me.StallA9)
         Me.Controls.Add(Me.StallA8)
         Me.Controls.Add(Me.StallA7)
-        Me.Controls.Add(Me.Button13)
-        Me.Controls.Add(Me.Button14)
-        Me.Controls.Add(Me.Button15)
-        Me.Controls.Add(Me.Button16)
-        Me.Controls.Add(Me.Button17)
-        Me.Controls.Add(Me.Button18)
+        Me.Controls.Add(Me.StallB6)
+        Me.Controls.Add(Me.StallB5)
+        Me.Controls.Add(Me.StallB4)
+        Me.Controls.Add(Me.StallB3)
+        Me.Controls.Add(Me.StallB2)
+        Me.Controls.Add(Me.StallB1)
         Me.Controls.Add(Me.StallA6)
         Me.Controls.Add(Me.StallA5)
         Me.Controls.Add(Me.StallA4)
         Me.Controls.Add(Me.StallA3)
         Me.Controls.Add(Me.StallA2)
         Me.Controls.Add(Me.StallA1)
-        Me.Controls.Add(Me.Button7)
-        Me.Controls.Add(Me.Button8)
-        Me.Controls.Add(Me.Button9)
-        Me.Controls.Add(Me.Button10)
-        Me.Controls.Add(Me.Button11)
-        Me.Controls.Add(Me.Button12)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.StallD6)
+        Me.Controls.Add(Me.StallD5)
+        Me.Controls.Add(Me.StallD4)
+        Me.Controls.Add(Me.StallD3)
+        Me.Controls.Add(Me.StallD2)
+        Me.Controls.Add(Me.StallD1)
+        Me.Controls.Add(Me.StallC6)
+        Me.Controls.Add(Me.StallC5)
+        Me.Controls.Add(Me.StallC4)
+        Me.Controls.Add(Me.StallC3)
+        Me.Controls.Add(Me.StallC2)
+        Me.Controls.Add(Me.StallC1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "HMSStart"
@@ -537,35 +537,35 @@ Partial Class HMSStart
 
     End Sub
 
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button13 As Button
-    Friend WithEvents Button14 As Button
-    Friend WithEvents Button15 As Button
-    Friend WithEvents Button16 As Button
-    Friend WithEvents Button17 As Button
-    Friend WithEvents Button18 As Button
+    Friend WithEvents StallC1 As Button
+    Friend WithEvents StallC2 As Button
+    Friend WithEvents StallC3 As Button
+    Friend WithEvents StallC4 As Button
+    Friend WithEvents StallC5 As Button
+    Friend WithEvents StallC6 As Button
+    Friend WithEvents StallD6 As Button
+    Friend WithEvents StallD5 As Button
+    Friend WithEvents StallD4 As Button
+    Friend WithEvents StallD3 As Button
+    Friend WithEvents StallD2 As Button
+    Friend WithEvents StallD1 As Button
+    Friend WithEvents StallB6 As Button
+    Friend WithEvents StallB5 As Button
+    Friend WithEvents StallB4 As Button
+    Friend WithEvents StallB3 As Button
+    Friend WithEvents StallB2 As Button
+    Friend WithEvents StallB1 As Button
     Friend WithEvents StallA6 As Button
     Friend WithEvents StallA5 As Button
     Friend WithEvents StallA4 As Button
     Friend WithEvents StallA3 As Button
     Friend WithEvents StallA2 As Button
     Friend WithEvents StallA1 As Button
-    Friend WithEvents Button25 As Button
-    Friend WithEvents Button26 As Button
-    Friend WithEvents Button27 As Button
-    Friend WithEvents Button28 As Button
-    Friend WithEvents Button29 As Button
+    Friend WithEvents StallB11 As Button
+    Friend WithEvents StallB10 As Button
+    Friend WithEvents StallB9 As Button
+    Friend WithEvents StallB8 As Button
+    Friend WithEvents StallB7 As Button
     Friend WithEvents StallA11 As Button
     Friend WithEvents StallA10 As Button
     Friend WithEvents StallA9 As Button
