@@ -6,6 +6,8 @@ Public Class HMSMain
     Private sql As String
     Private App As String
     Public Property Flag As String
+    Public Property CusID As String = HMSStart.CusID
+
     Public Function Reload()
         ShowUserData()
         customer_txt.Select()
@@ -17,8 +19,8 @@ Public Class HMSMain
     End Sub
 
     Private Sub ShowUserData()
-
-        Dim UserData As DataTable = ExecuteSQL("Select ID,  (Fname + ' ' + Lname) AS Customer FROM StorageDB")
+        'CusID = HMSStart.ID1
+        Dim UserData As DataTable = ExecuteSQL("Select ID,  (Fname + ' ' + Lname) AS Customer FROM StorageDB WHERE ID = '" & CusID & "'")
 
         With rentergrid1
 
@@ -32,7 +34,7 @@ Public Class HMSMain
             rentergrid1.Columns("ID").Visible = False
         End With
         rentergrid1_CellClick(rentergrid1, New DataGridViewCellEventArgs(0, 0))
-        rentergrid1.Rows(0).Selected = True
+        ' rentergrid1.Rows(CusID).Selected = True
     End Sub
 
     Private Sub end_btn_Click(sender As Object, e As EventArgs) Handles end_btn.Click
@@ -42,16 +44,16 @@ Public Class HMSMain
         Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
-
+        id_lbl.Text = CusID
         index = e.RowIndex
         Dim selectedRow As DataGridViewRow
         selectedRow = rentergrid1.Rows(index)
-        id_lbl.Text = selectedRow.Cells(0).Value.ToString()
+        CusID = selectedRow.Cells(0).Value.ToString()
         customer_txt.Text = selectedRow.Cells(1).Value.ToString()
         con.ConnectionString = StringConnection
         con.Open()
         cmd.Connection = con
-        cmd.CommandText = "Select Fname, Lname, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & id_lbl.Text & "'"
+        cmd.CommandText = "Select Fname, Lname, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
         Dim Data1 As SqlDataReader = cmd.ExecuteReader()
 
         While Data1.Read()
@@ -64,7 +66,7 @@ Public Class HMSMain
             Me.email_txt.Text = Convert.ToString(Data1("Email"))
         End While
 
-        Dim UserData1 As DataTable = ExecuteSQL("Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE ID = '" & id_lbl.Text & "'")
+        Dim UserData1 As DataTable = ExecuteSQL("Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE ID = '" & CusID & "'")
 
         With StallGrid1
             .DataSource = UserData1
@@ -95,7 +97,7 @@ Public Class HMSMain
                 row.DefaultCellStyle.ForeColor = Color.Green
             End If
         Next
-        Dim PayData1 As DataTable = ExecuteSQL("Select ID, StallNum, PayMeth, PayDate, PayAmount FROM PayHistory WHERE ID = '" & id_lbl.Text & "'")
+        Dim PayData1 As DataTable = ExecuteSQL("Select ID, StallNum, PayMeth, PayDate, PayAmount FROM PayHistory WHERE ID = '" & CusID & "'")
 
         With PayGrid1
             .DataSource = PayData1
@@ -120,7 +122,7 @@ Public Class HMSMain
         Dim obj As New CustEdit
         obj.AddNew_btn.Visible = False
         obj.SaveNew_btn.Visible = False
-        obj.CusID = id_lbl.Text
+        obj.CusID = CusID
         obj.cusFname_txt.Select()
         obj.Show()
 
@@ -155,7 +157,7 @@ Public Class HMSMain
         obj4.RBCard_rbtn.Visible = False
         obj4.Payment_btn.Visible = False
         obj4.unitNum_txt.Select()
-        obj4.CusID = id_lbl.Text
+        obj4.CusID = CusID
         obj4.Show()
         obj4.Text = "Huff Mini Storage - Unit Info"
     End Sub
@@ -170,7 +172,7 @@ Public Class HMSMain
         Dim obj5 As New CustEdit
         obj5.Text = "Huff Mini Storage - New Renter"
         obj5.Save_btn.Visible = False
-        obj5.CusID = id_lbl.Text
+        obj5.CusID = CusID
         obj5.Show()
     End Sub
 
@@ -182,7 +184,7 @@ Public Class HMSMain
         ' obj5.RBCard_rbtn.Visible = False
         ' obj5.Payment_btn.Visible = False
         ' obj5.unitNum_txt.Select()
-        obj5.CusID = id_lbl.Text
+        obj5.CusID = CusID
         obj5.Show()
     End Sub
 End Class

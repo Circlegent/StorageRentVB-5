@@ -342,7 +342,6 @@ Partial Class HMSMain
         Me.id_lbl.Size = New System.Drawing.Size(17, 13)
         Me.id_lbl.TabIndex = 19
         Me.id_lbl.Text = "lbl"
-        Me.id_lbl.Visible = False
         '
         'DLSS_lbl
         '
