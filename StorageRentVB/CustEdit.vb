@@ -90,17 +90,47 @@ Public Class CustEdit
     End Sub
 
     Private Sub AddNew_btn_Click(sender As Object, e As EventArgs) Handles AddNew_btn.Click
-        cusFname_txt.Text = ""
-        cusLname_txt.Text = ""
-        address_txt.Text = ""
-        city_txt.Text = ""
-        state_txt.Text = ""
-        zip_txt.Text = ""
-        Phone_txt.Text = ""
-        DLSS_txt.Text = ""
-        email_txt.Text = ""
-        AddNew_btn.Visible = False
-        cusFname_txt.Select()
+        Dim InsertQuery1 As String = "Insert INTO dbo.StorageDB ( Fname, Lname, Address, City, State, Zip, PhoneNum, LicenseNum, Email) Values ( @Fname, @Lname, @Address, @City, @State, @Zip, @PhoneNum, @LicenseNum, @Email)"
+        Dim con As New SqlConnection()
+        Dim cmd As New SqlCommand(InsertQuery1)
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        Try
+
+            cmd.Parameters.AddWithValue("@Fname", cusFname_txt.Text)
+            cmd.Parameters.AddWithValue("@Lname", cusLname_txt.Text)
+            cmd.Parameters.AddWithValue("@Address", address_txt.Text)
+            cmd.Parameters.AddWithValue("@City", city_txt.Text)
+            cmd.Parameters.AddWithValue("@State", state_txt.Text)
+            cmd.Parameters.AddWithValue("@Zip", zip_txt.Text)
+            cmd.Parameters.AddWithValue("@PhoneNum", Phone_txt.Text)
+            cmd.Parameters.AddWithValue("@LicenseNum", DLSS_txt.Text)
+            cmd.Parameters.AddWithValue("@Email", email_txt.Text)
+
+            cmd.ExecuteNonQuery()
+
+            MsgBox("Data Saved")
+
+        Catch ex As SqlException
+            MsgBox("Error has occurred!")
+        Finally
+            con.Close()
+        End Try
+
+        'HMSMain.Reload()
+        Me.Close()
+        'cusFname_txt.Text = ""
+        'cusLname_txt.Text = ""
+        'address_txt.Text = ""
+        'city_txt.Text = ""
+        'state_txt.Text = ""
+        'zip_txt.Text = ""
+        'Phone_txt.Text = ""
+        'DLSS_txt.Text = ""
+        'email_txt.Text = ""
+        'AddNew_btn.Visible = False
+        'cusFname_txt.Select()
     End Sub
 
     Private Sub SaveNew_btn_Click(sender As Object, e As EventArgs) Handles SaveNew_btn.Click
