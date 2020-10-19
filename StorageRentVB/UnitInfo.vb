@@ -3,6 +3,7 @@
 Public Class UnitInfo
 
     Public Property CusID As String = HMSStart.CusID
+    Public Property StallName As String = CustEdit.StallName
     Private Sub Form3_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         RBCheck_rbtn.Checked = True
         ShowUserData()
@@ -10,6 +11,7 @@ Public Class UnitInfo
     Private Sub ShowUserData()
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
+        unitNum_txt.Text = StallName
         con.ConnectionString = StringConnection
         con.Open()
         cmd.Connection = con

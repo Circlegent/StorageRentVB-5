@@ -1,6 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Public Class CustEdit
     Public Property CusID As String
+    Public Property StallName As String = HMSStart.StallName
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ShowUserData()

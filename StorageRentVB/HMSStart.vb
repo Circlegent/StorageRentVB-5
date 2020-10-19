@@ -3,6 +3,7 @@
 
 Public Class HMSStart
     Public Property CusID As String
+    Public Property StallName As String
     Private Sub CheckRenter()
         If CusID = "" Then
 
@@ -14,6 +15,7 @@ Public Class HMSStart
                 Dim answer2 As MsgBoxResult
                 answer2 = MsgBox("Do you wish to add new stall to existing customer?", MsgBoxStyle.YesNo)
                 If answer2 = MsgBoxResult.Yes Then
+
                     CustEdit.Show()
                 End If
 
@@ -1186,6 +1188,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA1.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1216,6 +1219,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA2.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1246,6 +1250,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA3.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1276,6 +1281,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA4.Text
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
         'selectedRow = rentergrid1.Rows(index)
@@ -1308,6 +1314,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA5.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1339,6 +1346,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA6.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1370,6 +1378,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA7.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1401,6 +1410,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA8.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1432,6 +1442,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA9.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1463,6 +1474,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA10.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1494,6 +1506,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallA11.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1525,6 +1538,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB1.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1556,6 +1570,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB2.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1587,6 +1602,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB3.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1618,6 +1634,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB4.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1649,6 +1666,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB5.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1680,6 +1698,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB6.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1711,6 +1730,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB7.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1742,6 +1762,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB8.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1773,6 +1794,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB9.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1804,6 +1826,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB10.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1835,6 +1858,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallB11.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1866,6 +1890,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallC1.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1897,6 +1922,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallC2.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1928,6 +1954,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallC3.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1959,6 +1986,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallC4.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -1990,6 +2018,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallC5.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -2021,6 +2050,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallC6.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -2052,6 +2082,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallD1.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -2083,6 +2114,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallD2.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -2114,6 +2146,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallD3.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -2145,6 +2178,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallD4.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -2176,6 +2210,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallD5.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
@@ -2207,6 +2242,7 @@ Public Class HMSStart
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
+        StallName = StallD6.Text
         CusID = ""
         'index = e.RowIndex
         ' Dim selectedRow As DataGridViewRow
