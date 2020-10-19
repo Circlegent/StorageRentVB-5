@@ -80,7 +80,7 @@ Partial Class LateNotice
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(213, 224)
+        Me.Button1.Location = New System.Drawing.Point(584, 146)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(179, 23)
         Me.Button1.TabIndex = 154
@@ -90,7 +90,7 @@ Partial Class LateNotice
         'rentdata_lbl
         '
         Me.rentdata_lbl.AutoSize = True
-        Me.rentdata_lbl.Location = New System.Drawing.Point(143, 251)
+        Me.rentdata_lbl.Location = New System.Drawing.Point(514, 173)
         Me.rentdata_lbl.Name = "rentdata_lbl"
         Me.rentdata_lbl.Size = New System.Drawing.Size(56, 13)
         Me.rentdata_lbl.TabIndex = 153
@@ -98,7 +98,7 @@ Partial Class LateNotice
         '
         'rentdate_txt
         '
-        Me.rentdate_txt.Location = New System.Drawing.Point(118, 266)
+        Me.rentdate_txt.Location = New System.Drawing.Point(489, 188)
         Me.rentdate_txt.Name = "rentdate_txt"
         Me.rentdate_txt.Size = New System.Drawing.Size(100, 20)
         Me.rentdate_txt.TabIndex = 152
@@ -114,7 +114,7 @@ Partial Class LateNotice
         'Email_lbl
         '
         Me.Email_lbl.AutoSize = True
-        Me.Email_lbl.Location = New System.Drawing.Point(329, 66)
+        Me.Email_lbl.Location = New System.Drawing.Point(16, 147)
         Me.Email_lbl.Name = "Email_lbl"
         Me.Email_lbl.Size = New System.Drawing.Size(35, 13)
         Me.Email_lbl.TabIndex = 150
@@ -123,15 +123,15 @@ Partial Class LateNotice
         'email_txt
         '
         Me.email_txt.Enabled = False
-        Me.email_txt.Location = New System.Drawing.Point(395, 59)
+        Me.email_txt.Location = New System.Drawing.Point(82, 140)
         Me.email_txt.Name = "email_txt"
-        Me.email_txt.Size = New System.Drawing.Size(258, 20)
+        Me.email_txt.Size = New System.Drawing.Size(233, 20)
         Me.email_txt.TabIndex = 149
         '
         'Zip_lbl
         '
         Me.Zip_lbl.AutoSize = True
-        Me.Zip_lbl.Location = New System.Drawing.Point(329, 40)
+        Me.Zip_lbl.Location = New System.Drawing.Point(16, 121)
         Me.Zip_lbl.Name = "Zip_lbl"
         Me.Zip_lbl.Size = New System.Drawing.Size(22, 13)
         Me.Zip_lbl.TabIndex = 148
@@ -140,15 +140,15 @@ Partial Class LateNotice
         'zip_txt
         '
         Me.zip_txt.Enabled = False
-        Me.zip_txt.Location = New System.Drawing.Point(395, 33)
+        Me.zip_txt.Location = New System.Drawing.Point(82, 114)
         Me.zip_txt.Name = "zip_txt"
-        Me.zip_txt.Size = New System.Drawing.Size(258, 20)
+        Me.zip_txt.Size = New System.Drawing.Size(233, 20)
         Me.zip_txt.TabIndex = 147
         '
         'State_lbl
         '
         Me.State_lbl.AutoSize = True
-        Me.State_lbl.Location = New System.Drawing.Point(329, 14)
+        Me.State_lbl.Location = New System.Drawing.Point(16, 95)
         Me.State_lbl.Name = "State_lbl"
         Me.State_lbl.Size = New System.Drawing.Size(32, 13)
         Me.State_lbl.TabIndex = 146
@@ -157,7 +157,7 @@ Partial Class LateNotice
         'state_txt
         '
         Me.state_txt.Enabled = False
-        Me.state_txt.Location = New System.Drawing.Point(395, 7)
+        Me.state_txt.Location = New System.Drawing.Point(82, 88)
         Me.state_txt.Name = "state_txt"
         Me.state_txt.Size = New System.Drawing.Size(233, 20)
         Me.state_txt.TabIndex = 145
@@ -216,14 +216,14 @@ Partial Class LateNotice
         'dgLate
         '
         Me.dgLate.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgLate.Location = New System.Drawing.Point(12, 85)
+        Me.dgLate.Location = New System.Drawing.Point(383, 7)
         Me.dgLate.Name = "dgLate"
         Me.dgLate.Size = New System.Drawing.Size(380, 133)
         Me.dgLate.TabIndex = 138
         '
         'Printrtb_btn
         '
-        Me.Printrtb_btn.Location = New System.Drawing.Point(12, 224)
+        Me.Printrtb_btn.Location = New System.Drawing.Point(383, 146)
         Me.Printrtb_btn.Name = "Printrtb_btn"
         Me.Printrtb_btn.Size = New System.Drawing.Size(187, 23)
         Me.Printrtb_btn.TabIndex = 137
@@ -233,7 +233,7 @@ Partial Class LateNotice
         'AmtPaid_lbl
         '
         Me.AmtPaid_lbl.AutoSize = True
-        Me.AmtPaid_lbl.Location = New System.Drawing.Point(335, 251)
+        Me.AmtPaid_lbl.Location = New System.Drawing.Point(706, 173)
         Me.AmtPaid_lbl.Name = "AmtPaid_lbl"
         Me.AmtPaid_lbl.Size = New System.Drawing.Size(66, 13)
         Me.AmtPaid_lbl.TabIndex = 136
@@ -241,7 +241,7 @@ Partial Class LateNotice
         '
         'AmtDue_txt
         '
-        Me.AmtDue_txt.Location = New System.Drawing.Point(321, 266)
+        Me.AmtDue_txt.Location = New System.Drawing.Point(692, 188)
         Me.AmtDue_txt.Name = "AmtDue_txt"
         Me.AmtDue_txt.Size = New System.Drawing.Size(86, 20)
         Me.AmtDue_txt.TabIndex = 128
@@ -249,7 +249,7 @@ Partial Class LateNotice
         'Test_lbl
         '
         Me.Test_lbl.AutoSize = True
-        Me.Test_lbl.Location = New System.Drawing.Point(452, 313)
+        Me.Test_lbl.Location = New System.Drawing.Point(865, 386)
         Me.Test_lbl.Name = "Test_lbl"
         Me.Test_lbl.Size = New System.Drawing.Size(39, 13)
         Me.Test_lbl.TabIndex = 135
@@ -258,7 +258,7 @@ Partial Class LateNotice
         'newduedate_lbl
         '
         Me.newduedate_lbl.AutoSize = True
-        Me.newduedate_lbl.Location = New System.Drawing.Point(238, 251)
+        Me.newduedate_lbl.Location = New System.Drawing.Point(609, 173)
         Me.newduedate_lbl.Name = "newduedate_lbl"
         Me.newduedate_lbl.Size = New System.Drawing.Size(67, 13)
         Me.newduedate_lbl.TabIndex = 134
@@ -266,7 +266,7 @@ Partial Class LateNotice
         '
         'currentdate_txt
         '
-        Me.currentdate_txt.Location = New System.Drawing.Point(224, 266)
+        Me.currentdate_txt.Location = New System.Drawing.Point(595, 188)
         Me.currentdate_txt.Name = "currentdate_txt"
         Me.currentdate_txt.Size = New System.Drawing.Size(89, 20)
         Me.currentdate_txt.TabIndex = 127
@@ -274,7 +274,7 @@ Partial Class LateNotice
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(37, 289)
+        Me.Label2.Location = New System.Drawing.Point(813, 171)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(69, 13)
         Me.Label2.TabIndex = 133
@@ -282,7 +282,7 @@ Partial Class LateNotice
         '
         'rentamountL_txt
         '
-        Me.rentamountL_txt.Location = New System.Drawing.Point(12, 304)
+        Me.rentamountL_txt.Location = New System.Drawing.Point(788, 186)
         Me.rentamountL_txt.Name = "rentamountL_txt"
         Me.rentamountL_txt.Size = New System.Drawing.Size(100, 20)
         Me.rentamountL_txt.TabIndex = 125
@@ -290,7 +290,7 @@ Partial Class LateNotice
         'id_lbl
         '
         Me.id_lbl.AutoSize = True
-        Me.id_lbl.Location = New System.Drawing.Point(491, 313)
+        Me.id_lbl.Location = New System.Drawing.Point(904, 386)
         Me.id_lbl.Name = "id_lbl"
         Me.id_lbl.Size = New System.Drawing.Size(39, 13)
         Me.id_lbl.TabIndex = 129
@@ -300,7 +300,7 @@ Partial Class LateNotice
         'DueDate_lbl
         '
         Me.DueDate_lbl.AutoSize = True
-        Me.DueDate_lbl.Location = New System.Drawing.Point(228, 291)
+        Me.DueDate_lbl.Location = New System.Drawing.Point(1004, 173)
         Me.DueDate_lbl.Name = "DueDate_lbl"
         Me.DueDate_lbl.Size = New System.Drawing.Size(78, 13)
         Me.DueDate_lbl.TabIndex = 132
@@ -309,7 +309,7 @@ Partial Class LateNotice
         'newrentdate_lbl
         '
         Me.newrentdate_lbl.AutoSize = True
-        Me.newrentdate_lbl.Location = New System.Drawing.Point(134, 291)
+        Me.newrentdate_lbl.Location = New System.Drawing.Point(910, 173)
         Me.newrentdate_lbl.Name = "newrentdate_lbl"
         Me.newrentdate_lbl.Size = New System.Drawing.Size(81, 13)
         Me.newrentdate_lbl.TabIndex = 131
@@ -318,7 +318,7 @@ Partial Class LateNotice
         'UnitNum_lbl
         '
         Me.UnitNum_lbl.AutoSize = True
-        Me.UnitNum_lbl.Location = New System.Drawing.Point(31, 251)
+        Me.UnitNum_lbl.Location = New System.Drawing.Point(402, 173)
         Me.UnitNum_lbl.Name = "UnitNum_lbl"
         Me.UnitNum_lbl.Size = New System.Drawing.Size(63, 13)
         Me.UnitNum_lbl.TabIndex = 130
@@ -326,21 +326,21 @@ Partial Class LateNotice
         '
         'duedateL_txt
         '
-        Me.duedateL_txt.Location = New System.Drawing.Point(224, 306)
+        Me.duedateL_txt.Location = New System.Drawing.Point(1000, 188)
         Me.duedateL_txt.Name = "duedateL_txt"
         Me.duedateL_txt.Size = New System.Drawing.Size(89, 20)
         Me.duedateL_txt.TabIndex = 126
         '
         'newrentdate_txt
         '
-        Me.newrentdate_txt.Location = New System.Drawing.Point(118, 306)
+        Me.newrentdate_txt.Location = New System.Drawing.Point(894, 188)
         Me.newrentdate_txt.Name = "newrentdate_txt"
         Me.newrentdate_txt.Size = New System.Drawing.Size(100, 20)
         Me.newrentdate_txt.TabIndex = 124
         '
         'unitNumL_txt
         '
-        Me.unitNumL_txt.Location = New System.Drawing.Point(12, 266)
+        Me.unitNumL_txt.Location = New System.Drawing.Point(383, 188)
         Me.unitNumL_txt.Name = "unitNumL_txt"
         Me.unitNumL_txt.Size = New System.Drawing.Size(100, 20)
         Me.unitNumL_txt.TabIndex = 123
@@ -348,7 +348,7 @@ Partial Class LateNotice
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(545, 309)
+        Me.Label1.Location = New System.Drawing.Point(958, 382)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(62, 13)
         Me.Label1.TabIndex = 122
@@ -357,7 +357,7 @@ Partial Class LateNotice
         'rtbLateNotice
         '
         Me.rtbLateNotice.Anchor = System.Windows.Forms.AnchorStyles.None
-        Me.rtbLateNotice.Location = New System.Drawing.Point(21, 340)
+        Me.rtbLateNotice.Location = New System.Drawing.Point(12, 427)
         Me.rtbLateNotice.Name = "rtbLateNotice"
         Me.rtbLateNotice.ReadOnly = True
         Me.rtbLateNotice.Size = New System.Drawing.Size(380, 67)
@@ -381,14 +381,14 @@ Partial Class LateNotice
         'PayGrid2
         '
         Me.PayGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.PayGrid2.Location = New System.Drawing.Point(413, 85)
+        Me.PayGrid2.Location = New System.Drawing.Point(413, 214)
         Me.PayGrid2.Name = "PayGrid2"
         Me.PayGrid2.Size = New System.Drawing.Size(418, 133)
         Me.PayGrid2.TabIndex = 157
         '
         'PrtRpt_btn
         '
-        Me.PrtRpt_btn.Location = New System.Drawing.Point(413, 224)
+        Me.PrtRpt_btn.Location = New System.Drawing.Point(413, 353)
         Me.PrtRpt_btn.Name = "PrtRpt_btn"
         Me.PrtRpt_btn.Size = New System.Drawing.Size(194, 23)
         Me.PrtRpt_btn.TabIndex = 158
@@ -397,7 +397,7 @@ Partial Class LateNotice
         '
         'eRcpt_btn
         '
-        Me.eRcpt_btn.Location = New System.Drawing.Point(638, 224)
+        Me.eRcpt_btn.Location = New System.Drawing.Point(638, 353)
         Me.eRcpt_btn.Name = "eRcpt_btn"
         Me.eRcpt_btn.Size = New System.Drawing.Size(193, 23)
         Me.eRcpt_btn.TabIndex = 159
@@ -406,21 +406,21 @@ Partial Class LateNotice
         '
         'unitNumL1_txt
         '
-        Me.unitNumL1_txt.Location = New System.Drawing.Point(422, 266)
+        Me.unitNumL1_txt.Location = New System.Drawing.Point(423, 395)
         Me.unitNumL1_txt.Name = "unitNumL1_txt"
         Me.unitNumL1_txt.Size = New System.Drawing.Size(92, 20)
         Me.unitNumL1_txt.TabIndex = 160
         '
         'PayAmt_txt
         '
-        Me.PayAmt_txt.Location = New System.Drawing.Point(625, 266)
+        Me.PayAmt_txt.Location = New System.Drawing.Point(626, 395)
         Me.PayAmt_txt.Name = "PayAmt_txt"
         Me.PayAmt_txt.Size = New System.Drawing.Size(100, 20)
         Me.PayAmt_txt.TabIndex = 161
         '
         'unitPayment_txt
         '
-        Me.unitPayment_txt.Location = New System.Drawing.Point(520, 266)
+        Me.unitPayment_txt.Location = New System.Drawing.Point(521, 395)
         Me.unitPayment_txt.Name = "unitPayment_txt"
         Me.unitPayment_txt.Size = New System.Drawing.Size(100, 20)
         Me.unitPayment_txt.TabIndex = 162
@@ -428,7 +428,7 @@ Partial Class LateNotice
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(432, 251)
+        Me.Label3.Location = New System.Drawing.Point(432, 380)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 13)
         Me.Label3.TabIndex = 164
@@ -437,7 +437,7 @@ Partial Class LateNotice
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(635, 251)
+        Me.Label4.Location = New System.Drawing.Point(635, 380)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(87, 13)
         Me.Label4.TabIndex = 165
@@ -446,7 +446,7 @@ Partial Class LateNotice
         'PayMeth_txt
         '
         Me.PayMeth_txt.AutoSize = True
-        Me.PayMeth_txt.Location = New System.Drawing.Point(532, 251)
+        Me.PayMeth_txt.Location = New System.Drawing.Point(532, 380)
         Me.PayMeth_txt.Name = "PayMeth_txt"
         Me.PayMeth_txt.Size = New System.Drawing.Size(75, 13)
         Me.PayMeth_txt.TabIndex = 166
@@ -454,7 +454,7 @@ Partial Class LateNotice
         '
         'rtbRcpt
         '
-        Me.rtbRcpt.Location = New System.Drawing.Point(422, 341)
+        Me.rtbRcpt.Location = New System.Drawing.Point(422, 424)
         Me.rtbRcpt.Name = "rtbRcpt"
         Me.rtbRcpt.Size = New System.Drawing.Size(409, 67)
         Me.rtbRcpt.TabIndex = 167
@@ -476,7 +476,7 @@ Partial Class LateNotice
         '
         'rcptDueDate_txt
         '
-        Me.rcptDueDate_txt.Location = New System.Drawing.Point(731, 266)
+        Me.rcptDueDate_txt.Location = New System.Drawing.Point(732, 395)
         Me.rcptDueDate_txt.Name = "rcptDueDate_txt"
         Me.rcptDueDate_txt.Size = New System.Drawing.Size(100, 20)
         Me.rcptDueDate_txt.TabIndex = 168
@@ -484,7 +484,7 @@ Partial Class LateNotice
         'rcptDueDate_lbl
         '
         Me.rcptDueDate_lbl.AutoSize = True
-        Me.rcptDueDate_lbl.Location = New System.Drawing.Point(747, 251)
+        Me.rcptDueDate_lbl.Location = New System.Drawing.Point(747, 380)
         Me.rcptDueDate_lbl.Name = "rcptDueDate_lbl"
         Me.rcptDueDate_lbl.Size = New System.Drawing.Size(78, 13)
         Me.rcptDueDate_lbl.TabIndex = 169
@@ -492,7 +492,7 @@ Partial Class LateNotice
         '
         'Paytemp
         '
-        Me.Paytemp.Location = New System.Drawing.Point(661, 309)
+        Me.Paytemp.Location = New System.Drawing.Point(1074, 382)
         Me.Paytemp.Name = "Paytemp"
         Me.Paytemp.Size = New System.Drawing.Size(100, 20)
         Me.Paytemp.TabIndex = 170
@@ -501,7 +501,7 @@ Partial Class LateNotice
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(843, 412)
+        Me.ClientSize = New System.Drawing.Size(1210, 600)
         Me.Controls.Add(Me.Paytemp)
         Me.Controls.Add(Me.rcptDueDate_lbl)
         Me.Controls.Add(Me.rcptDueDate_txt)

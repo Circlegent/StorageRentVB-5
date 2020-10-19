@@ -34,7 +34,19 @@ Public Class CustEdit
             Me.email_txt.Text = Convert.ToString(Data1("Email"))
         End While
 
+        Dim UserData As DataTable = ExecuteSQL("Select ID,  (Fname + ' ' + Lname) AS Customer FROM StorageDB ")
 
+        With rentergrid2
+
+            .DataSource = UserData
+            .Columns(0).HeaderText = "ID"
+            .Columns(1).HeaderText = "Customer"
+            .Columns(0).Width = 50
+            .Columns(1).Width = 244
+            rentergrid2.ColumnHeadersVisible = False
+            rentergrid2.RowHeadersVisible = False
+            rentergrid2.Columns("ID").Visible = False
+        End With
     End Sub
 
     Private Sub Save_btn_Click(sender As Object, e As EventArgs) Handles Save_btn.Click
@@ -119,7 +131,41 @@ Public Class CustEdit
             con.Close()
         End Try
 
-        HMSMain.Reload()
+        'HMSMain.Reload()
         Me.Close()
+    End Sub
+
+    Private Sub rentergrid2_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles rentergrid2.CellContentClick
+        Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        id_lbl.Text = CusID
+        index = e.RowIndex
+        Dim selectedRow As DataGridViewRow
+        selectedRow = rentergrid2.Rows(index)
+        CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select Fname, Lname, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            cusFname_txt.Text = Convert.ToString(Data1("Fname"))
+            cusLname_txt.Text = Convert.ToString(Data1("Lname"))
+            address_txt.Text = Convert.ToString(Data1("Address"))
+            city_txt.Text = Convert.ToString(Data1("City"))
+            state_txt.Text = Convert.ToString(Data1("State"))
+            zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+
+    Private Sub StallAdd_Click(sender As Object, e As EventArgs) Handles StallAdd.Click
+        UnitInfo.CusID = CusID
+        UnitInfo.Show()
     End Sub
 End Class

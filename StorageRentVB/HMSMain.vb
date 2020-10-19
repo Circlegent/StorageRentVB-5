@@ -19,7 +19,6 @@ Public Class HMSMain
     End Sub
 
     Private Sub ShowUserData()
-        'CusID = HMSStart.ID1
         Dim UserData As DataTable = ExecuteSQL("Select ID,  (Fname + ' ' + Lname) AS Customer FROM StorageDB WHERE ID = '" & CusID & "'")
 
         With rentergrid1

@@ -3,9 +3,30 @@
 
 Public Class HMSStart
     Public Property CusID As String
+    Private Sub CheckRenter()
+        If CusID = "" Then
 
+            Dim answer1 As MsgBoxResult
+            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
+            If answer1 = MsgBoxResult.Yes Then
+                CustEdit.Show()
+            Else
+                Dim answer2 As MsgBoxResult
+                answer2 = MsgBox("Do you wish to add new stall to existing customer?", MsgBoxStyle.YesNo)
+                If answer2 = MsgBoxResult.Yes Then
+                    CustEdit.Show()
+                End If
+                ' CusID = 1
+                ' HMSMain.CusID = CusID
+                ' HMSMain.Show()
+            End If
+
+        Else
+            HMSMain.CusID = CusID
+            HMSMain.Show()
+        End If
+    End Sub
     Private Sub S(sender As Object, e As EventArgs) Handles StallA1.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -39,13 +60,12 @@ Public Class HMSStart
                 StallA1.BackColor = Color.Red
             Else
                 StallA1.BackColor = Color.Green
-        End If
+            End If
         End If
 
     End Sub
 
     Private Sub S2(sender As Object, e As EventArgs) Handles StallA2.MouseEnter, StallA2.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -78,7 +98,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S3(sender As Object, e As EventArgs) Handles StallA3.MouseEnter, StallA3.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -111,7 +130,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S4(sender As Object, e As EventArgs) Handles StallA4.MouseEnter, StallA4.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -144,7 +162,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S5(sender As Object, e As EventArgs) Handles StallA5.MouseEnter, StallA5.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -177,7 +194,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S6(sender As Object, e As EventArgs) Handles StallA6.MouseEnter, StallA6.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -210,7 +226,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S7(sender As Object, e As EventArgs) Handles StallA7.MouseEnter, StallA7.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -244,7 +259,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S8(sender As Object, e As EventArgs) Handles StallA8.MouseEnter, StallA8.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -277,7 +291,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S9(sender As Object, e As EventArgs) Handles StallA9.MouseEnter, StallA9.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -310,7 +323,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S10(sender As Object, e As EventArgs) Handles StallA10.MouseEnter, StallA10.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -343,7 +355,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S11(sender As Object, e As EventArgs) Handles StallA11.MouseEnter, StallA11.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -376,7 +387,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S12(sender As Object, e As EventArgs) Handles StallB1.MouseEnter, StallB1.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -409,7 +419,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S13(sender As Object, e As EventArgs) Handles StallB2.MouseEnter, StallB2.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -442,7 +451,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S14(sender As Object, e As EventArgs) Handles StallB3.MouseEnter, StallB3.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -475,7 +483,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S15(sender As Object, e As EventArgs) Handles StallB4.MouseEnter, StallB4.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -508,7 +515,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S16(sender As Object, e As EventArgs) Handles StallB5.MouseEnter, StallB5.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -541,7 +547,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S17(sender As Object, e As EventArgs) Handles StallB6.MouseEnter, StallB6.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -574,7 +579,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S18(sender As Object, e As EventArgs) Handles StallB7.MouseEnter, StallB7.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -607,7 +611,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S19(sender As Object, e As EventArgs) Handles StallB8.MouseEnter, StallB8.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -640,7 +643,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S20(sender As Object, e As EventArgs) Handles StallB9.MouseEnter, StallB9.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -673,7 +675,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S21(sender As Object, e As EventArgs) Handles StallB10.MouseEnter, StallB10.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -706,7 +707,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S22(sender As Object, e As EventArgs) Handles StallB11.MouseEnter, StallB11.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -739,7 +739,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S23(sender As Object, e As EventArgs) Handles StallC1.MouseEnter, StallC1.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -772,7 +771,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S24(sender As Object, e As EventArgs) Handles StallC2.MouseEnter, StallC2.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -805,7 +803,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S25(sender As Object, e As EventArgs) Handles StallC3.MouseEnter, StallC3.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -838,7 +835,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S26(sender As Object, e As EventArgs) Handles StallC4.MouseEnter, StallC4.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -871,7 +867,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S27(sender As Object, e As EventArgs) Handles StallC5.MouseEnter, StallC5.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -904,7 +899,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S28(sender As Object, e As EventArgs) Handles StallC6.MouseEnter, StallC6.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -937,7 +931,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S29(sender As Object, e As EventArgs) Handles StallD1.MouseEnter, StallD1.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -970,7 +963,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S30(sender As Object, e As EventArgs) Handles StallD2.MouseEnter, StallD2.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1003,7 +995,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S31(sender As Object, e As EventArgs) Handles StallD3.MouseEnter, StallD3.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1036,7 +1027,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S32(sender As Object, e As EventArgs) Handles StallD4.MouseEnter, StallD4.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1069,7 +1059,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S33(sender As Object, e As EventArgs) Handles StallD5.MouseEnter, StallD5.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1102,7 +1091,6 @@ Public Class HMSStart
         End If
     End Sub
     Private Sub S34(sender As Object, e As EventArgs) Handles StallD6.MouseEnter, StallD6.MouseEnter
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1136,7 +1124,6 @@ Public Class HMSStart
     End Sub
 
     Private Sub HMSStart_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
@@ -1200,7 +1187,6 @@ Public Class HMSStart
     End Sub
 
     Private Sub StallA1_Click(sender As Object, e As EventArgs) Handles StallA1.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1228,22 +1214,7 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallA2_Click(sender As Object, e As EventArgs) Handles StallA2.Click
@@ -1272,23 +1243,8 @@ Public Class HMSStart
             Duedate1 = Convert.ToString(Data1("DueDate"))
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
-        If CusID = "" Then
+        CheckRenter()
 
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
     End Sub
 
     Private Sub StallA3_Click(sender As Object, e As EventArgs) Handles StallA3.Click
@@ -1317,34 +1273,10 @@ Public Class HMSStart
             Duedate1 = Convert.ToString(Data1("DueDate"))
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
-        'Dim obj5 As New HMSMain
-
-        ' obj5.RBCheck_rbtn.Visible = False
-        ' obj5.RBCash_rbtn.Visible = False
-        ' obj5.RBCard_rbtn.Visible = False
-        ' obj5.Payment_btn.Visible = False
-        ' obj5.unitNum_txt.Select()
-
+        CheckRenter()
     End Sub
 
     Private Sub StallA4_Click(sender As Object, e As EventArgs) Handles StallA4.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         Dim ID1 As String
@@ -1370,22 +1302,13 @@ Public Class HMSStart
             Duedate1 = Convert.ToString(Data1("DueDate"))
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
+        CheckRenter()
 
-        Dim obj5 As New HMSMain
-
-        ' obj5.RBCheck_rbtn.Visible = False
-        ' obj5.RBCash_rbtn.Visible = False
-        ' obj5.RBCard_rbtn.Visible = False
-        ' obj5.Payment_btn.Visible = False
-        ' obj5.unitNum_txt.Select()
-        obj5.CusID = ID1
-        obj5.Show()
     End Sub
 
 
 
     Private Sub StallA5_Click(sender As Object, e As EventArgs) Handles StallA5.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1412,27 +1335,11 @@ Public Class HMSStart
             Duedate1 = Convert.ToString(Data1("DueDate"))
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
+        CheckRenter()
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
     End Sub
 
     Private Sub StallA6_Click(sender As Object, e As EventArgs) Handles StallA6.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1460,26 +1367,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallA7_Click(sender As Object, e As EventArgs) Handles StallA7.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1507,26 +1398,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallA8_Click(sender As Object, e As EventArgs) Handles StallA8.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1554,26 +1429,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallA9_Click(sender As Object, e As EventArgs) Handles StallA9.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1601,26 +1460,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallA10_Click(sender As Object, e As EventArgs) Handles StallA10.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1648,26 +1491,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallA11_Click(sender As Object, e As EventArgs) Handles StallA11.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1695,26 +1522,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB1_Click(sender As Object, e As EventArgs) Handles StallB1.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1742,27 +1553,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB2_Click(sender As Object, e As EventArgs) Handles StallB2.Click
-
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1790,27 +1584,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB3_Click(sender As Object, e As EventArgs) Handles StallB3.Click
-
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1838,26 +1615,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB4_Click(sender As Object, e As EventArgs) Handles StallB4.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1885,26 +1646,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB5_Click(sender As Object, e As EventArgs) Handles StallB5.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1932,26 +1677,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB6_Click(sender As Object, e As EventArgs) Handles StallB6.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1979,26 +1708,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB7_Click(sender As Object, e As EventArgs) Handles StallB7.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2026,26 +1739,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB8_Click(sender As Object, e As EventArgs) Handles StallB8.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2073,26 +1770,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB9_Click(sender As Object, e As EventArgs) Handles StallB9.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2120,26 +1801,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB10_Click(sender As Object, e As EventArgs) Handles StallB10.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2167,26 +1832,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallB11_Click(sender As Object, e As EventArgs) Handles StallB11.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2214,26 +1863,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallC1_Click(sender As Object, e As EventArgs) Handles StallC1.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2261,26 +1894,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallC2_Click(sender As Object, e As EventArgs) Handles StallC2.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2308,26 +1925,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallC3_Click(sender As Object, e As EventArgs) Handles StallC3.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2355,26 +1956,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallC4_Click(sender As Object, e As EventArgs) Handles StallC4.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2402,26 +1987,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallC5_Click(sender As Object, e As EventArgs) Handles StallC5.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2449,26 +2018,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallC6_Click(sender As Object, e As EventArgs) Handles StallC6.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2496,26 +2049,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallD1_Click(sender As Object, e As EventArgs) Handles StallD1.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2543,26 +2080,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallD2_Click(sender As Object, e As EventArgs) Handles StallD2.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2590,26 +2111,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallD3_Click(sender As Object, e As EventArgs) Handles StallD3.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2637,26 +2142,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallD4_Click(sender As Object, e As EventArgs) Handles StallD4.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2684,26 +2173,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallD5_Click(sender As Object, e As EventArgs) Handles StallD5.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2731,26 +2204,10 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 
     Private Sub StallD6_Click(sender As Object, e As EventArgs) Handles StallD6.Click
-        Dim index As Integer
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -2778,21 +2235,6 @@ Public Class HMSStart
             DateRented1 = Convert.ToString(Data1("DateRented"))
         End While
 
-        If CusID = "" Then
-
-            Dim answer1 As MsgBoxResult
-            answer1 = MsgBox("Do you wish to add new customer?", MsgBoxStyle.YesNo)
-            If answer1 = MsgBoxResult.Yes Then
-                CustEdit.Show()
-            Else
-                CusID = 1
-                HMSMain.CusID = CusID
-                HMSMain.Show()
-            End If
-
-        Else
-            HMSMain.CusID = CusID
-            HMSMain.Show()
-        End If
+        CheckRenter()
     End Sub
 End Class

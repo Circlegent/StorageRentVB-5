@@ -43,6 +43,9 @@ Partial Class CustEdit
         Me.DLSS_lbl = New System.Windows.Forms.Label()
         Me.AddNew_btn = New System.Windows.Forms.Button()
         Me.SaveNew_btn = New System.Windows.Forms.Button()
+        Me.rentergrid2 = New System.Windows.Forms.DataGridView()
+        Me.StallAdd = New System.Windows.Forms.Button()
+        CType(Me.rentergrid2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Email_lbl
@@ -158,7 +161,7 @@ Partial Class CustEdit
         'id_lbl
         '
         Me.id_lbl.AutoSize = True
-        Me.id_lbl.Location = New System.Drawing.Point(93, 221)
+        Me.id_lbl.Location = New System.Drawing.Point(18, 448)
         Me.id_lbl.Name = "id_lbl"
         Me.id_lbl.Size = New System.Drawing.Size(39, 13)
         Me.id_lbl.TabIndex = 26
@@ -167,9 +170,9 @@ Partial Class CustEdit
         '
         'Save_btn
         '
-        Me.Save_btn.Location = New System.Drawing.Point(12, 221)
+        Me.Save_btn.Location = New System.Drawing.Point(12, 202)
         Me.Save_btn.Name = "Save_btn"
-        Me.Save_btn.Size = New System.Drawing.Size(75, 23)
+        Me.Save_btn.Size = New System.Drawing.Size(69, 23)
         Me.Save_btn.TabIndex = 27
         Me.Save_btn.Text = "Update"
         Me.Save_btn.UseVisualStyleBackColor = True
@@ -187,7 +190,7 @@ Partial Class CustEdit
         'Phone_txt
         '
         Me.Phone_txt.Location = New System.Drawing.Point(78, 119)
-        Me.Phone_txt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Phone_txt.Margin = New System.Windows.Forms.Padding(2)
         Me.Phone_txt.Name = "Phone_txt"
         Me.Phone_txt.Size = New System.Drawing.Size(224, 20)
         Me.Phone_txt.TabIndex = 7
@@ -195,7 +198,7 @@ Partial Class CustEdit
         'DLSS_txt
         '
         Me.DLSS_txt.Location = New System.Drawing.Point(78, 169)
-        Me.DLSS_txt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DLSS_txt.Margin = New System.Windows.Forms.Padding(2)
         Me.DLSS_txt.Name = "DLSS_txt"
         Me.DLSS_txt.Size = New System.Drawing.Size(224, 20)
         Me.DLSS_txt.TabIndex = 9
@@ -212,8 +215,8 @@ Partial Class CustEdit
         '
         'AddNew_btn
         '
-        Me.AddNew_btn.Location = New System.Drawing.Point(143, 221)
-        Me.AddNew_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.AddNew_btn.Location = New System.Drawing.Point(147, 202)
+        Me.AddNew_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.AddNew_btn.Name = "AddNew_btn"
         Me.AddNew_btn.Size = New System.Drawing.Size(75, 23)
         Me.AddNew_btn.TabIndex = 32
@@ -222,19 +225,48 @@ Partial Class CustEdit
         '
         'SaveNew_btn
         '
-        Me.SaveNew_btn.Location = New System.Drawing.Point(223, 221)
-        Me.SaveNew_btn.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SaveNew_btn.Location = New System.Drawing.Point(227, 202)
+        Me.SaveNew_btn.Margin = New System.Windows.Forms.Padding(2)
         Me.SaveNew_btn.Name = "SaveNew_btn"
         Me.SaveNew_btn.Size = New System.Drawing.Size(75, 23)
         Me.SaveNew_btn.TabIndex = 33
         Me.SaveNew_btn.Text = "Save Renter"
         Me.SaveNew_btn.UseVisualStyleBackColor = True
         '
+        'rentergrid2
+        '
+        Me.rentergrid2.AllowUserToAddRows = False
+        Me.rentergrid2.AllowUserToDeleteRows = False
+        Me.rentergrid2.AllowUserToResizeColumns = False
+        Me.rentergrid2.AllowUserToResizeRows = False
+        Me.rentergrid2.BackgroundColor = System.Drawing.SystemColors.Menu
+        Me.rentergrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.rentergrid2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.rentergrid2.Location = New System.Drawing.Point(13, 232)
+        Me.rentergrid2.Margin = New System.Windows.Forms.Padding(0)
+        Me.rentergrid2.MultiSelect = False
+        Me.rentergrid2.Name = "rentergrid2"
+        Me.rentergrid2.RowHeadersWidth = 51
+        Me.rentergrid2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
+        Me.rentergrid2.Size = New System.Drawing.Size(289, 214)
+        Me.rentergrid2.TabIndex = 34
+        '
+        'StallAdd
+        '
+        Me.StallAdd.Location = New System.Drawing.Point(83, 202)
+        Me.StallAdd.Name = "StallAdd"
+        Me.StallAdd.Size = New System.Drawing.Size(60, 23)
+        Me.StallAdd.TabIndex = 35
+        Me.StallAdd.Text = "Add Stall"
+        Me.StallAdd.UseVisualStyleBackColor = True
+        '
         'CustEdit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(319, 256)
+        Me.ClientSize = New System.Drawing.Size(319, 470)
+        Me.Controls.Add(Me.StallAdd)
+        Me.Controls.Add(Me.rentergrid2)
         Me.Controls.Add(Me.SaveNew_btn)
         Me.Controls.Add(Me.AddNew_btn)
         Me.Controls.Add(Me.DLSS_lbl)
@@ -258,6 +290,7 @@ Partial Class CustEdit
         Me.Controls.Add(Me.cusFname_txt)
         Me.Name = "CustEdit"
         Me.Text = "Huff Mini Storage - Edit Renter"
+        CType(Me.rentergrid2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -284,4 +317,6 @@ Partial Class CustEdit
     Friend WithEvents DLSS_lbl As Label
     Friend WithEvents AddNew_btn As Button
     Friend WithEvents SaveNew_btn As Button
+    Friend WithEvents rentergrid2 As DataGridView
+    Friend WithEvents StallAdd As Button
 End Class

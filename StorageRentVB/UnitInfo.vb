@@ -73,7 +73,7 @@ Public Class UnitInfo
             con.Close()
         End Try
 
-        HMSMain.Reload()
+        'HMSMain.Reload()
         Me.Close()
 
     End Sub
