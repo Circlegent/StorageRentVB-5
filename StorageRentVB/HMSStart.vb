@@ -2265,4 +2265,8 @@ Public Class HMSStart
 
         CheckRenter()
     End Sub
+
+    Private Sub end_btn_Click(sender As Object, e As EventArgs) Handles end_btn.Click
+        End
+    End Sub
 End Class

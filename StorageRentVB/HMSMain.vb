@@ -36,7 +36,7 @@ Public Class HMSMain
         ' rentergrid1.Rows(CusID).Selected = True
     End Sub
 
-    Private Sub end_btn_Click(sender As Object, e As EventArgs) Handles end_btn.Click
+    Private Sub end_btn_Click(sender As Object, e As EventArgs)
         End
     End Sub
     Private Sub rentergrid1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles rentergrid1.CellClick
@@ -96,7 +96,7 @@ Public Class HMSMain
                 row.DefaultCellStyle.ForeColor = Color.Green
             End If
         Next
-        Dim PayData1 As DataTable = ExecuteSQL("Select ID, StallNum, PayMeth, PayDate, PayAmount FROM PayHistory WHERE ID = '" & CusID & "'")
+        Dim PayData1 As DataTable = ExecuteSQL("Select ID, StallNum, PayMeth, PayDate, PayAmount, PaidtillDate FROM PayHistory WHERE ID = '" & CusID & "'")
 
         With PayGrid1
             .DataSource = PayData1
@@ -105,11 +105,13 @@ Public Class HMSMain
             .Columns(2).HeaderText = "PayMeth"
             .Columns(3).HeaderText = "PayDate"
             .Columns(4).HeaderText = "PayAmount"
+            .Columns(5).HeaderText = "Paid Till"
             .Columns(0).Width = 30
             .Columns(1).Width = 68
             .Columns(2).Width = 70
             .Columns(3).Width = 110
             .Columns(4).Width = 67
+            .Columns(5).Width = 80
             PayGrid1.ColumnHeadersVisible = False
             PayGrid1.RowHeadersVisible = False
             PayGrid1.Columns("ID").Visible = False

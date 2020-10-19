@@ -64,6 +64,7 @@ Partial Class HMSStart
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BtnMain = New System.Windows.Forms.Button()
+        Me.end_btn = New System.Windows.Forms.Button()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -479,18 +480,28 @@ Partial Class HMSStart
         '
         'BtnMain
         '
-        Me.BtnMain.Location = New System.Drawing.Point(786, 532)
+        Me.BtnMain.Location = New System.Drawing.Point(480, 335)
         Me.BtnMain.Name = "BtnMain"
         Me.BtnMain.Size = New System.Drawing.Size(75, 23)
         Me.BtnMain.TabIndex = 35
         Me.BtnMain.Text = "Main"
         Me.BtnMain.UseVisualStyleBackColor = True
         '
+        'end_btn
+        '
+        Me.end_btn.Location = New System.Drawing.Point(786, 545)
+        Me.end_btn.Name = "end_btn"
+        Me.end_btn.Size = New System.Drawing.Size(88, 33)
+        Me.end_btn.TabIndex = 36
+        Me.end_btn.Text = "End Program"
+        Me.end_btn.UseVisualStyleBackColor = True
+        '
         'HMSStart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(894, 646)
+        Me.Controls.Add(Me.end_btn)
         Me.Controls.Add(Me.BtnMain)
         Me.Controls.Add(Me.StallB11)
         Me.Controls.Add(Me.StallB10)
@@ -579,4 +590,5 @@ Partial Class HMSStart
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents BtnMain As Button
+    Friend WithEvents end_btn As Button
 End Class
