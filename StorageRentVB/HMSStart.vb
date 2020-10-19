@@ -16,9 +16,7 @@ Public Class HMSStart
                 If answer2 = MsgBoxResult.Yes Then
                     CustEdit.Show()
                 End If
-                ' CusID = 1
-                ' HMSMain.CusID = CusID
-                ' HMSMain.Show()
+
             End If
 
         Else
@@ -29,17 +27,11 @@ Public Class HMSStart
     Private Sub S(sender As Object, e As EventArgs) Handles StallA1.MouseEnter
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
-        'Dim ID1 As String
         Dim Stallnum1 As String
         Dim Rent1 As String
         Dim Duedate1 As String
         Dim DateRented1 As String
         CusID = ""
-        'index = e.RowIndex
-        ' Dim selectedRow As DataGridViewRow
-        'selectedRow = rentergrid1.Rows(index)
-        'id_lbl.Text = selectedRow.Cells(0).Value.ToString()
-        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
         con.ConnectionString = StringConnection
         con.Open()
         cmd.Connection = con
