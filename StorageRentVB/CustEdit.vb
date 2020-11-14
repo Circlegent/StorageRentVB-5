@@ -52,6 +52,7 @@ Public Class CustEdit
 
     Private Sub Save_btn_Click(sender As Object, e As EventArgs) Handles Save_btn.Click
 
+        'CusID = ""
         Dim updateQuery As String = "UPDATE StorageDB SET Fname = @Fname, Lname = @Lname, Address = @Address, City = @City, State = @State, Zip = @Zip, PhoneNum = @PhoneNum, LicenseNum = @LicenseNum, Email = @Email WHERE ID = @ID"
         Dim con As New SqlConnection()
         Dim cmd As New SqlCommand(updateQuery)
@@ -60,7 +61,7 @@ Public Class CustEdit
         cmd.Connection = con
         Try
 
-            cmd.Parameters.AddWithValue("@ID", id_lbl.Text)
+            cmd.Parameters.AddWithValue("@ID", CusID)
             cmd.Parameters.AddWithValue("@Fname", cusFname_txt.Text)
             cmd.Parameters.AddWithValue("@Lname", cusLname_txt.Text)
             cmd.Parameters.AddWithValue("@Address", address_txt.Text)
@@ -73,7 +74,7 @@ Public Class CustEdit
 
             cmd.ExecuteNonQuery()
 
-            MsgBox("Data Saved")
+            MsgBox("Data Updated")
 
         Catch ex As SqlException
             MsgBox("Error has occurred!")
@@ -90,7 +91,8 @@ Public Class CustEdit
     End Sub
 
     Private Sub AddNew_btn_Click(sender As Object, e As EventArgs) Handles AddNew_btn.Click
-        Dim InsertQuery1 As String = "Insert INTO dbo.StorageDB ( Fname, Lname, Address, City, State, Zip, PhoneNum, LicenseNum, Email) Values ( @Fname, @Lname, @Address, @City, @State, @Zip, @PhoneNum, @LicenseNum, @Email)"
+
+        Dim InsertQuery1 As String = "Insert INTO StorageDB ( Fname, Lname, Address, City, State, Zip, PhoneNum, LicenseNum, Email) Values ( @Fname, @Lname, @Address, @City, @State, @Zip, @PhoneNum, @LicenseNum, @Email)"
         Dim con As New SqlConnection()
         Dim cmd As New SqlCommand(InsertQuery1)
         con.ConnectionString = StringConnection
@@ -118,23 +120,12 @@ Public Class CustEdit
             con.Close()
         End Try
 
-        'HMSMain.Reload()
         Me.Close()
-        'cusFname_txt.Text = ""
-        'cusLname_txt.Text = ""
-        'address_txt.Text = ""
-        'city_txt.Text = ""
-        'state_txt.Text = ""
-        'zip_txt.Text = ""
-        'Phone_txt.Text = ""
-        'DLSS_txt.Text = ""
-        'email_txt.Text = ""
-        'AddNew_btn.Visible = False
-        'cusFname_txt.Select()
+
     End Sub
 
     Private Sub SaveNew_btn_Click(sender As Object, e As EventArgs) Handles SaveNew_btn.Click
-        Dim InsertQuery1 As String = "Insert INTO dbo.StorageDB ( Fname, Lname, Address, City, State, Zip, PhoneNum, LicenseNum, Email) Values ( @Fname, @Lname, @Address, @City, @State, @Zip, @PhoneNum, @LicenseNum, @Email)"
+        Dim InsertQuery1 As String = "Insert INTO StorageDB ( Fname, Lname, Address, City, State, Zip, PhoneNum, LicenseNum, Email) Values ( @Fname, @Lname, @Address, @City, @State, @Zip, @PhoneNum, @LicenseNum, @Email)"
         Dim con As New SqlConnection()
         Dim cmd As New SqlCommand(InsertQuery1)
         con.ConnectionString = StringConnection

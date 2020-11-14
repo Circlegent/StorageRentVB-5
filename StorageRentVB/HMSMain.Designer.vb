@@ -62,6 +62,8 @@ Partial Class HMSMain
         Me.NewEntryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DocumentsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ScanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.rentergrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.StallGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PayGrid1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -382,7 +384,7 @@ Partial Class HMSMain
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DatabaseToolStripMenuItem, Me.OptionsToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.DatabaseToolStripMenuItem, Me.OptionsToolStripMenuItem, Me.DocumentsToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(578, 24)
@@ -427,6 +429,19 @@ Partial Class HMSMain
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
         Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
+        'DocumentsToolStripMenuItem
+        '
+        Me.DocumentsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ScanToolStripMenuItem})
+        Me.DocumentsToolStripMenuItem.Name = "DocumentsToolStripMenuItem"
+        Me.DocumentsToolStripMenuItem.Size = New System.Drawing.Size(80, 20)
+        Me.DocumentsToolStripMenuItem.Text = "Documents"
+        '
+        'ScanToolStripMenuItem
+        '
+        Me.ScanToolStripMenuItem.Name = "ScanToolStripMenuItem"
+        Me.ScanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ScanToolStripMenuItem.Text = "Scan"
         '
         'HMSMain
         '
@@ -519,4 +534,6 @@ Partial Class HMSMain
     Friend WithEvents NewEntryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DocumentsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ScanToolStripMenuItem As ToolStripMenuItem
 End Class
