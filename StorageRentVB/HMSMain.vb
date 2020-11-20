@@ -1,5 +1,5 @@
 ﻿Imports System.Data.SqlClient
-
+Imports System.Net
 
 Public Class HMSMain
     Private dataST As DataSet
@@ -187,5 +187,9 @@ Public Class HMSMain
         ' obj5.unitNum_txt.Select()
         obj5.CusID = CusID
         obj5.Show()
+    End Sub
+
+    Private Sub ScanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ScanToolStripMenuItem.Click
+
     End Sub
 End Class

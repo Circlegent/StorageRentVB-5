@@ -143,6 +143,8 @@ Public Class UnitInfo
         ElseIf RBCard_rbtn.Checked = True Then
             PaymentMethod = "Card"
             MessageBox.Show("You selected Card payment.")
+            Dim webAddress As String = "https://squareup.com/terminal/"
+            Process.Start(webAddress)
         End If
 
         IntervalType = "m"    ' "m" specifies months as interval.
