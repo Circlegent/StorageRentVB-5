@@ -32,5 +32,4 @@ Module SQLServerConnection
             'Errors
         End Try
     End Function
-
 End Module
