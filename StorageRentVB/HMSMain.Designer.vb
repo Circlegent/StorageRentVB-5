@@ -440,7 +440,7 @@ Partial Class HMSMain
         'ScanToolStripMenuItem
         '
         Me.ScanToolStripMenuItem.Name = "ScanToolStripMenuItem"
-        Me.ScanToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ScanToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.ScanToolStripMenuItem.Text = "Scan"
         '
         'HMSMain

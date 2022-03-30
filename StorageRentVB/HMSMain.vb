@@ -161,12 +161,15 @@ Public Class HMSMain
         obj4.CusID = CusID
         obj4.Show()
         obj4.Text = "Huff Mini Storage - Unit Info"
+        Me.Close()
+
     End Sub
 
     Private Sub CusPayment_btn_Click(sender As Object, e As EventArgs) Handles CusPayment_btn.Click
         Dim obj3 As New UnitInfo
         obj3.CusID = id_lbl.Text
         obj3.Show()
+        Me.Close()
     End Sub
 
     Private Sub CusNew_btn_Click(sender As Object, e As EventArgs) Handles CusNew_btn.Click

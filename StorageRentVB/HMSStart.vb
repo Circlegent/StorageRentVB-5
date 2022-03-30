@@ -27,7 +27,7 @@ Public Class HMSStart
             HMSMain.Show()
         End If
     End Sub
-    Private Sub S(sender As Object, e As EventArgs) Handles StallA1.MouseEnter
+    Private Sub S(sender As Object, e As EventArgs) Handles StallA1.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         Dim Stallnum1 As String
@@ -60,7 +60,7 @@ Public Class HMSStart
 
     End Sub
 
-    Private Sub S2(sender As Object, e As EventArgs) Handles StallA2.MouseEnter, StallA2.MouseEnter
+    Private Sub S2(sender As Object, e As EventArgs) Handles StallA2.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -92,7 +92,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S3(sender As Object, e As EventArgs) Handles StallA3.MouseEnter, StallA3.MouseEnter
+    Private Sub S3(sender As Object, e As EventArgs) Handles StallA3.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -124,7 +124,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S4(sender As Object, e As EventArgs) Handles StallA4.MouseEnter, StallA4.MouseEnter
+    Private Sub S4(sender As Object, e As EventArgs) Handles StallA4.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -156,7 +156,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S5(sender As Object, e As EventArgs) Handles StallA5.MouseEnter, StallA5.MouseEnter
+    Private Sub S5(sender As Object, e As EventArgs) Handles StallA5.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -188,7 +188,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S6(sender As Object, e As EventArgs) Handles StallA6.MouseEnter, StallA6.MouseEnter
+    Private Sub S6(sender As Object, e As EventArgs) Handles StallA6.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -220,7 +220,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S7(sender As Object, e As EventArgs) Handles StallA7.MouseEnter, StallA7.MouseEnter
+    Private Sub S7(sender As Object, e As EventArgs) Handles StallA7.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -253,7 +253,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S8(sender As Object, e As EventArgs) Handles StallA8.MouseEnter, StallA8.MouseEnter
+    Private Sub S8(sender As Object, e As EventArgs) Handles StallA8.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -285,7 +285,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S9(sender As Object, e As EventArgs) Handles StallA9.MouseEnter, StallA9.MouseEnter
+    Private Sub S9(sender As Object, e As EventArgs) Handles StallA9.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -317,7 +317,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S10(sender As Object, e As EventArgs) Handles StallA10.MouseEnter, StallA10.MouseEnter
+    Private Sub S10(sender As Object, e As EventArgs) Handles StallA10.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -349,7 +349,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S11(sender As Object, e As EventArgs) Handles StallA11.MouseEnter, StallA11.MouseEnter
+    Private Sub S11(sender As Object, e As EventArgs) Handles StallA11.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -381,7 +381,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S12(sender As Object, e As EventArgs) Handles StallB1.MouseEnter, StallB1.MouseEnter
+    Private Sub S12(sender As Object, e As EventArgs) Handles StallB1.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -413,7 +413,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S13(sender As Object, e As EventArgs) Handles StallB2.MouseEnter, StallB2.MouseEnter
+    Private Sub S13(sender As Object, e As EventArgs) Handles StallB2.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -445,7 +445,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S14(sender As Object, e As EventArgs) Handles StallB3.MouseEnter, StallB3.MouseEnter
+    Private Sub S14(sender As Object, e As EventArgs) Handles StallB3.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -477,7 +477,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S15(sender As Object, e As EventArgs) Handles StallB4.MouseEnter, StallB4.MouseEnter
+    Private Sub S15(sender As Object, e As EventArgs) Handles StallB4.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -509,7 +509,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S16(sender As Object, e As EventArgs) Handles StallB5.MouseEnter, StallB5.MouseEnter
+    Private Sub S16(sender As Object, e As EventArgs) Handles StallB5.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -541,7 +541,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S17(sender As Object, e As EventArgs) Handles StallB6.MouseEnter, StallB6.MouseEnter
+    Private Sub S17(sender As Object, e As EventArgs) Handles StallB6.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -573,7 +573,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S18(sender As Object, e As EventArgs) Handles StallB7.MouseEnter, StallB7.MouseEnter
+    Private Sub S18(sender As Object, e As EventArgs) Handles StallB7.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -605,7 +605,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S19(sender As Object, e As EventArgs) Handles StallB8.MouseEnter, StallB8.MouseEnter
+    Private Sub S19(sender As Object, e As EventArgs) Handles StallB8.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -637,7 +637,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S20(sender As Object, e As EventArgs) Handles StallB9.MouseEnter, StallB9.MouseEnter
+    Private Sub S20(sender As Object, e As EventArgs) Handles StallB9.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -669,7 +669,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S21(sender As Object, e As EventArgs) Handles StallB10.MouseEnter, StallB10.MouseEnter
+    Private Sub S21(sender As Object, e As EventArgs) Handles StallB10.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -701,7 +701,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S22(sender As Object, e As EventArgs) Handles StallB11.MouseEnter, StallB11.MouseEnter
+    Private Sub S22(sender As Object, e As EventArgs) Handles StallB11.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -733,7 +733,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S23(sender As Object, e As EventArgs) Handles StallC1.MouseEnter, StallC1.MouseEnter
+    Private Sub S23(sender As Object, e As EventArgs) Handles StallC1.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -765,7 +765,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S24(sender As Object, e As EventArgs) Handles StallC2.MouseEnter, StallC2.MouseEnter
+    Private Sub S24(sender As Object, e As EventArgs) Handles StallC2.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -797,7 +797,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S25(sender As Object, e As EventArgs) Handles StallC3.MouseEnter, StallC3.MouseEnter
+    Private Sub S25(sender As Object, e As EventArgs) Handles StallC3.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -829,7 +829,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S26(sender As Object, e As EventArgs) Handles StallC4.MouseEnter, StallC4.MouseEnter
+    Private Sub S26(sender As Object, e As EventArgs) Handles StallC4.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -861,7 +861,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S27(sender As Object, e As EventArgs) Handles StallC5.MouseEnter, StallC5.MouseEnter
+    Private Sub S27(sender As Object, e As EventArgs) Handles StallC5.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -893,7 +893,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S28(sender As Object, e As EventArgs) Handles StallC6.MouseEnter, StallC6.MouseEnter
+    Private Sub S28(sender As Object, e As EventArgs) Handles StallC6.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -925,7 +925,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S29(sender As Object, e As EventArgs) Handles StallD1.MouseEnter, StallD1.MouseEnter
+    Private Sub S29(sender As Object, e As EventArgs) Handles StallD1.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -957,7 +957,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S30(sender As Object, e As EventArgs) Handles StallD2.MouseEnter, StallD2.MouseEnter
+    Private Sub S30(sender As Object, e As EventArgs) Handles StallD2.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -989,7 +989,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S31(sender As Object, e As EventArgs) Handles StallD3.MouseEnter, StallD3.MouseEnter
+    Private Sub S31(sender As Object, e As EventArgs) Handles StallD3.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1021,7 +1021,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S32(sender As Object, e As EventArgs) Handles StallD4.MouseEnter, StallD4.MouseEnter
+    Private Sub S32(sender As Object, e As EventArgs) Handles StallD4.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1053,7 +1053,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S33(sender As Object, e As EventArgs) Handles StallD5.MouseEnter, StallD5.MouseEnter
+    Private Sub S33(sender As Object, e As EventArgs) Handles StallD5.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1085,7 +1085,7 @@ Public Class HMSStart
             End If
         End If
     End Sub
-    Private Sub S34(sender As Object, e As EventArgs) Handles StallD6.MouseEnter, StallD6.MouseEnter
+    Private Sub S34(sender As Object, e As EventArgs) Handles StallD6.VisibleChanged
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
         'Dim ID1 As String
@@ -1122,65 +1122,12 @@ Public Class HMSStart
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
-        'index = e.RowIndex
-        ' Dim selectedRow As DataGridViewRow
-        'selectedRow = rentergrid1.Rows(index)
-        'id_lbl.Text = selectedRow.Cells(0).Value.ToString()
-        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
         con.ConnectionString = StringConnection
         con.Open()
         cmd.Connection = con
         cmd.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum"
-        'ShowLateRenter()
 
-
-        'Dim UserData1 As DataTable = ExecuteSQL("Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE ID = '" & id_lbl.Text & "'")
-
-        'With StallGrid1
-        '.DataSource = UserData1
-        '.Columns(0).HeaderText = "ID"
-        '.Columns(1).HeaderText = "StallNum"
-        '.Columns(2).HeaderText = "Rent"
-        '.Columns(3).HeaderText = "DueDate"
-        '.Columns(4).HeaderText = "DateRented"
-        '.Columns(0).Width = 60
-        '.Columns(1).Width = 60
-        '.Columns(2).Width = 58
-        '.Columns(3).Width = 100
-        '.Columns(4).Width = 10
-        'StallGrid1.ColumnHeadersVisible = False
-        'StallGrid1.RowHeadersVisible = False
-        'StallGrid1.Columns("ID").Visible = False
-        'StallGrid1.Columns("DateRented").Visible = False
-        'End With
-        'Dim strExt As String
-        ' We set up the For Next loop to iterate the DataGridView rows
-        'For Each row As DataGridViewRow In Me.StallGrid1.Rows
-        ' Get the READY value from each row as we loop
-        ' strExt = row.Cells(3).Value
-        '  Apply the color formatting based on your conditions
-        'If strExt < Date.Today Then
-        'Row.DefaultCellStyle.ForeColor = Color.Red
-        'Else
-        'Row.DefaultCellStyle.ForeColor = Color.Green
-        'End If
-        'Next
     End Sub
-
-
-
-    Private Sub BtnMain_Click(sender As Object, e As EventArgs) Handles BtnMain.Click
-        Dim obj5 As New HMSMain
-
-        ' obj5.RBCheck_rbtn.Visible = False
-        ' obj5.RBCash_rbtn.Visible = False
-        ' obj5.RBCard_rbtn.Visible = False
-        ' obj5.Payment_btn.Visible = False
-        ' obj5.unitNum_txt.Select()
-        'obj5.CusID = id_lbl.Text
-        obj5.Show()
-    End Sub
-
     Private Sub StallA1_Click(sender As Object, e As EventArgs) Handles StallA1.Click
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
@@ -2269,5 +2216,1777 @@ Public Class HMSStart
 
     Private Sub end_btn_Click(sender As Object, e As EventArgs) Handles end_btn.Click
         End
+    End Sub
+    Private Sub ShowMainA1(sender As Object, e As EventArgs) Handles StallA1.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA1.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+
+    Private Sub ShowMainA2(sender As Object, e As EventArgs) Handles StallA2.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        'Dim BtnName As String
+        'BtnName = StallA2.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA2.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+
+    Private Sub ShowMainA3(sender As Object, e As EventArgs) Handles StallA3.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA3.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+
+    Private Sub ShowMainA4(sender As Object, e As EventArgs) Handles StallA4.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA4.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainA5(sender As Object, e As EventArgs) Handles StallA5.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA5.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainA6(sender As Object, e As EventArgs) Handles StallA6.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA6.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainA7(sender As Object, e As EventArgs) Handles StallA7.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA7.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainA8(sender As Object, e As EventArgs) Handles StallA8.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA8.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainA9(sender As Object, e As EventArgs) Handles StallA9.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA9.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainA10(sender As Object, e As EventArgs) Handles StallA10.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA10.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainA11(sender As Object, e As EventArgs) Handles StallA11.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallA11.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB1(sender As Object, e As EventArgs) Handles StallB1.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB1.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB2(sender As Object, e As EventArgs) Handles StallB2.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB2.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB3(sender As Object, e As EventArgs) Handles StallB3.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB3.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB4(sender As Object, e As EventArgs) Handles StallB4.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB4.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB5(sender As Object, e As EventArgs) Handles StallB5.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB5.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB6(sender As Object, e As EventArgs) Handles StallB6.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB6.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB7(sender As Object, e As EventArgs) Handles StallB7.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB7.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB8(sender As Object, e As EventArgs) Handles StallB8.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB8.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB9(sender As Object, e As EventArgs) Handles StallB9.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB9.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB10(sender As Object, e As EventArgs) Handles StallB10.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB10.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainB11(sender As Object, e As EventArgs) Handles StallB11.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallB11.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainC1(sender As Object, e As EventArgs) Handles StallC1.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallC1.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainC2(sender As Object, e As EventArgs) Handles StallC2.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallC2.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainC3(sender As Object, e As EventArgs) Handles StallC3.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallC3.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainC4(sender As Object, e As EventArgs) Handles StallC4.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallC4.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainC5(sender As Object, e As EventArgs) Handles StallC5.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallC5.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainC6(sender As Object, e As EventArgs) Handles StallC6.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallC6.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainD1(sender As Object, e As EventArgs) Handles StallD1.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallD1.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainD2(sender As Object, e As EventArgs) Handles StallD2.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallD2.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainD3(sender As Object, e As EventArgs) Handles StallD3.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallD3.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainD4(sender As Object, e As EventArgs) Handles StallD4.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallD4.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainD5(sender As Object, e As EventArgs) Handles StallD5.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallD5.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
+    End Sub
+    Private Sub ShowMainD6(sender As Object, e As EventArgs) Handles StallD6.MouseEnter
+
+        Dim con1 As New SqlConnection
+        Dim cmd1 As New SqlCommand
+        Dim Stallnum1 As String
+        Dim BtnName As String
+        BtnName = StallB1.Text
+        'Dim Rent1 As String
+        'Dim Duedate1 As String
+        'Dim DateRented1 As String
+        CusID = ""
+        con1.ConnectionString = StringConnection
+        con1.Open()
+        cmd1.Connection = con1
+        cmd1.CommandText = "Select ID, StallNum, Rent, DueDate, DateRented FROM StallNum WHERE StallNum = '" + StallD6.Text + "'"
+        Dim Data2 As SqlDataReader = cmd1.ExecuteReader()
+
+
+        While Data2.Read()
+            CusID = Convert.ToString(Data2("ID"))
+            Stallnum1 = Convert.ToString(Data2("StallNum"))
+            'Rent1 = Convert.ToString(Data1("Rent"))
+            Dim Duedate1 = Convert.ToString(Data2("DueDate"))
+            'DateRented1 = Convert.ToString(Data1("DateRented"))
+            Me.txtduedate.Text = Convert.ToString(Data2("DueDate"))
+        End While
+
+        'Dim index As Integer
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        'StallB1.Text = CusID
+        'Index = e.RowIndex
+        'Dim selectedRow As DataGridViewRow
+        'selectedRow = rentergrid1.Rows(index)
+        'CusID = selectedRow.Cells(0).Value.ToString()
+        'customer_txt.Text = selectedRow.Cells(1).Value.ToString()
+        con.ConnectionString = StringConnection
+        con.Open()
+        cmd.Connection = con
+        cmd.CommandText = "Select (Fname + ' ' + Lname) AS Customer, Address, City, State, Zip, PhoneNum, LicenseNum, Email FROM StorageDB WHERE ID = '" & CusID & "'"
+        Dim Data1 As SqlDataReader = cmd.ExecuteReader()
+
+        While Data1.Read()
+            Me.customer_txt.Text = Convert.ToString(Data1("Customer"))
+            Me.address_txt.Text = Convert.ToString(Data1("Address"))
+            Me.city_txt.Text = Convert.ToString(Data1("City"))
+            Me.state_txt.Text = Convert.ToString(Data1("State"))
+            Me.zip_txt.Text = Convert.ToString(Data1("Zip"))
+            Me.Phone_txt.Text = Convert.ToString(Data1("PhoneNum"))
+            Me.DLSS_txt.Text = Convert.ToString(Data1("LicenseNum"))
+            Me.email_txt.Text = Convert.ToString(Data1("Email"))
+        End While
     End Sub
 End Class

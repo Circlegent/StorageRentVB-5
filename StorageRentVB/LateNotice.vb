@@ -163,7 +163,8 @@ Public Class LateNotice
         rtbLateNotice.AppendText("Your due date that we have for this unit is on " + DueDateL + "." + vbNewLine)
         rtbLateNotice.AppendText("The total due to catch up this unit is $" + AmtDue_txt.Text + ".")
         rtbLateNotice.AppendText("This amount will pay all rent for this unit up to " + newrentdate_txt.Text + vbNewLine)
-
+        rtbLateNotice.AppendText("If you feel this is amount is in error please contact us at (417) 744-4161." + vbNewLine)
+        rtbLateNotice.AppendText("Thank you for your business.")
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -286,7 +287,6 @@ Public Class LateNotice
         rtbRcpt.AppendText("" + vbNewLine)
         rtbRcpt.AppendText("Thank you for your payment for Unit " + UnitRcpt + ".  " + vbNewLine)
         rtbRcpt.AppendText("Your payment was made with " + unitPayment_txt.Text + " for the amount of " + PayAmt_txt.Text + "." + vbNewLine)
-        'rtbLateNotice.AppendText("The total due to catch up this unit is $" + AmtDue_txt.Text + ".")
         rtbRcpt.AppendText("This payment brings your rent due date to " + rcptDueDate_txt.Text + vbNewLine)
     End Sub
 

@@ -63,8 +63,25 @@ Partial Class HMSStart
         Me.NewEntryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.BtnMain = New System.Windows.Forms.Button()
         Me.end_btn = New System.Windows.Forms.Button()
+        Me.DLSS_lbl = New System.Windows.Forms.Label()
+        Me.DLSS_txt = New System.Windows.Forms.TextBox()
+        Me.Phone_txt = New System.Windows.Forms.TextBox()
+        Me.Phone_lbl = New System.Windows.Forms.Label()
+        Me.Email_lbl = New System.Windows.Forms.Label()
+        Me.email_txt = New System.Windows.Forms.TextBox()
+        Me.Zip_lbl = New System.Windows.Forms.Label()
+        Me.zip_txt = New System.Windows.Forms.TextBox()
+        Me.State_lbl = New System.Windows.Forms.Label()
+        Me.state_txt = New System.Windows.Forms.TextBox()
+        Me.City_lbl = New System.Windows.Forms.Label()
+        Me.city_txt = New System.Windows.Forms.TextBox()
+        Me.Address_lbl = New System.Windows.Forms.Label()
+        Me.address_txt = New System.Windows.Forms.TextBox()
+        Me.Customer_lbl = New System.Windows.Forms.Label()
+        Me.customer_txt = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtduedate = New System.Windows.Forms.TextBox()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -478,31 +495,196 @@ Partial Class HMSStart
         Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(116, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
-        'BtnMain
-        '
-        Me.BtnMain.Location = New System.Drawing.Point(480, 335)
-        Me.BtnMain.Name = "BtnMain"
-        Me.BtnMain.Size = New System.Drawing.Size(75, 23)
-        Me.BtnMain.TabIndex = 35
-        Me.BtnMain.Text = "Main"
-        Me.BtnMain.UseVisualStyleBackColor = True
-        '
         'end_btn
         '
-        Me.end_btn.Location = New System.Drawing.Point(786, 545)
+        Me.end_btn.Location = New System.Drawing.Point(773, 601)
         Me.end_btn.Name = "end_btn"
         Me.end_btn.Size = New System.Drawing.Size(88, 33)
         Me.end_btn.TabIndex = 36
         Me.end_btn.Text = "End Program"
         Me.end_btn.UseVisualStyleBackColor = True
         '
+        'DLSS_lbl
+        '
+        Me.DLSS_lbl.AutoSize = True
+        Me.DLSS_lbl.Location = New System.Drawing.Point(490, 497)
+        Me.DLSS_lbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.DLSS_lbl.Name = "DLSS_lbl"
+        Me.DLSS_lbl.Size = New System.Drawing.Size(56, 13)
+        Me.DLSS_lbl.TabIndex = 52
+        Me.DLSS_lbl.Text = "DL / SS #"
+        '
+        'DLSS_txt
+        '
+        Me.DLSS_txt.Enabled = False
+        Me.DLSS_txt.Location = New System.Drawing.Point(557, 493)
+        Me.DLSS_txt.Margin = New System.Windows.Forms.Padding(2)
+        Me.DLSS_txt.Name = "DLSS_txt"
+        Me.DLSS_txt.Size = New System.Drawing.Size(304, 20)
+        Me.DLSS_txt.TabIndex = 51
+        '
+        'Phone_txt
+        '
+        Me.Phone_txt.Enabled = False
+        Me.Phone_txt.Location = New System.Drawing.Point(557, 442)
+        Me.Phone_txt.Margin = New System.Windows.Forms.Padding(2)
+        Me.Phone_txt.Name = "Phone_txt"
+        Me.Phone_txt.Size = New System.Drawing.Size(304, 20)
+        Me.Phone_txt.TabIndex = 50
+        '
+        'Phone_lbl
+        '
+        Me.Phone_lbl.AutoSize = True
+        Me.Phone_lbl.Location = New System.Drawing.Point(491, 446)
+        Me.Phone_lbl.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Phone_lbl.Name = "Phone_lbl"
+        Me.Phone_lbl.Size = New System.Drawing.Size(38, 13)
+        Me.Phone_lbl.TabIndex = 49
+        Me.Phone_lbl.Text = "Phone"
+        '
+        'Email_lbl
+        '
+        Me.Email_lbl.AutoSize = True
+        Me.Email_lbl.Location = New System.Drawing.Point(491, 473)
+        Me.Email_lbl.Name = "Email_lbl"
+        Me.Email_lbl.Size = New System.Drawing.Size(35, 13)
+        Me.Email_lbl.TabIndex = 48
+        Me.Email_lbl.Text = "E-mail"
+        '
+        'email_txt
+        '
+        Me.email_txt.Enabled = False
+        Me.email_txt.Location = New System.Drawing.Point(557, 466)
+        Me.email_txt.Name = "email_txt"
+        Me.email_txt.Size = New System.Drawing.Size(304, 20)
+        Me.email_txt.TabIndex = 47
+        '
+        'Zip_lbl
+        '
+        Me.Zip_lbl.AutoSize = True
+        Me.Zip_lbl.Location = New System.Drawing.Point(603, 417)
+        Me.Zip_lbl.Name = "Zip_lbl"
+        Me.Zip_lbl.Size = New System.Drawing.Size(22, 13)
+        Me.Zip_lbl.TabIndex = 46
+        Me.Zip_lbl.Text = "Zip"
+        '
+        'zip_txt
+        '
+        Me.zip_txt.Enabled = False
+        Me.zip_txt.Location = New System.Drawing.Point(630, 413)
+        Me.zip_txt.Name = "zip_txt"
+        Me.zip_txt.Size = New System.Drawing.Size(59, 20)
+        Me.zip_txt.TabIndex = 45
+        '
+        'State_lbl
+        '
+        Me.State_lbl.AutoSize = True
+        Me.State_lbl.Location = New System.Drawing.Point(491, 420)
+        Me.State_lbl.Name = "State_lbl"
+        Me.State_lbl.Size = New System.Drawing.Size(32, 13)
+        Me.State_lbl.TabIndex = 44
+        Me.State_lbl.Text = "State"
+        '
+        'state_txt
+        '
+        Me.state_txt.Enabled = False
+        Me.state_txt.Location = New System.Drawing.Point(557, 414)
+        Me.state_txt.Name = "state_txt"
+        Me.state_txt.Size = New System.Drawing.Size(41, 20)
+        Me.state_txt.TabIndex = 43
+        '
+        'City_lbl
+        '
+        Me.City_lbl.AutoSize = True
+        Me.City_lbl.Location = New System.Drawing.Point(491, 395)
+        Me.City_lbl.Name = "City_lbl"
+        Me.City_lbl.Size = New System.Drawing.Size(24, 13)
+        Me.City_lbl.TabIndex = 42
+        Me.City_lbl.Text = "City"
+        '
+        'city_txt
+        '
+        Me.city_txt.Enabled = False
+        Me.city_txt.Location = New System.Drawing.Point(557, 388)
+        Me.city_txt.Name = "city_txt"
+        Me.city_txt.Size = New System.Drawing.Size(304, 20)
+        Me.city_txt.TabIndex = 41
+        '
+        'Address_lbl
+        '
+        Me.Address_lbl.AutoSize = True
+        Me.Address_lbl.Location = New System.Drawing.Point(491, 369)
+        Me.Address_lbl.Name = "Address_lbl"
+        Me.Address_lbl.Size = New System.Drawing.Size(45, 13)
+        Me.Address_lbl.TabIndex = 40
+        Me.Address_lbl.Text = "Address"
+        '
+        'address_txt
+        '
+        Me.address_txt.Enabled = False
+        Me.address_txt.Location = New System.Drawing.Point(557, 362)
+        Me.address_txt.Name = "address_txt"
+        Me.address_txt.Size = New System.Drawing.Size(304, 20)
+        Me.address_txt.TabIndex = 39
+        '
+        'Customer_lbl
+        '
+        Me.Customer_lbl.AutoSize = True
+        Me.Customer_lbl.Location = New System.Drawing.Point(491, 343)
+        Me.Customer_lbl.Name = "Customer_lbl"
+        Me.Customer_lbl.Size = New System.Drawing.Size(51, 13)
+        Me.Customer_lbl.TabIndex = 38
+        Me.Customer_lbl.Text = "Customer"
+        '
+        'customer_txt
+        '
+        Me.customer_txt.Enabled = False
+        Me.customer_txt.Location = New System.Drawing.Point(557, 336)
+        Me.customer_txt.Name = "customer_txt"
+        Me.customer_txt.Size = New System.Drawing.Size(304, 20)
+        Me.customer_txt.TabIndex = 37
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(696, 417)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(53, 13)
+        Me.Label1.TabIndex = 53
+        Me.Label1.Text = "Date Due"
+        '
+        'txtduedate
+        '
+        Me.txtduedate.Enabled = False
+        Me.txtduedate.Location = New System.Drawing.Point(752, 413)
+        Me.txtduedate.Name = "txtduedate"
+        Me.txtduedate.Size = New System.Drawing.Size(109, 20)
+        Me.txtduedate.TabIndex = 54
+        '
         'HMSStart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(894, 646)
+        Me.Controls.Add(Me.txtduedate)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.DLSS_lbl)
+        Me.Controls.Add(Me.DLSS_txt)
+        Me.Controls.Add(Me.Phone_txt)
+        Me.Controls.Add(Me.Phone_lbl)
+        Me.Controls.Add(Me.Email_lbl)
+        Me.Controls.Add(Me.email_txt)
+        Me.Controls.Add(Me.Zip_lbl)
+        Me.Controls.Add(Me.zip_txt)
+        Me.Controls.Add(Me.State_lbl)
+        Me.Controls.Add(Me.state_txt)
+        Me.Controls.Add(Me.City_lbl)
+        Me.Controls.Add(Me.city_txt)
+        Me.Controls.Add(Me.Address_lbl)
+        Me.Controls.Add(Me.address_txt)
+        Me.Controls.Add(Me.Customer_lbl)
+        Me.Controls.Add(Me.customer_txt)
         Me.Controls.Add(Me.end_btn)
-        Me.Controls.Add(Me.BtnMain)
         Me.Controls.Add(Me.StallB11)
         Me.Controls.Add(Me.StallB10)
         Me.Controls.Add(Me.StallB9)
@@ -589,6 +771,23 @@ Partial Class HMSStart
     Friend WithEvents NewEntryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OptionsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents BtnMain As Button
     Friend WithEvents end_btn As Button
+    Friend WithEvents DLSS_lbl As Label
+    Friend WithEvents DLSS_txt As TextBox
+    Friend WithEvents Phone_txt As TextBox
+    Friend WithEvents Phone_lbl As Label
+    Friend WithEvents Email_lbl As Label
+    Friend WithEvents email_txt As TextBox
+    Friend WithEvents Zip_lbl As Label
+    Friend WithEvents zip_txt As TextBox
+    Friend WithEvents State_lbl As Label
+    Friend WithEvents state_txt As TextBox
+    Friend WithEvents City_lbl As Label
+    Friend WithEvents city_txt As TextBox
+    Friend WithEvents Address_lbl As Label
+    Friend WithEvents address_txt As TextBox
+    Friend WithEvents Customer_lbl As Label
+    Friend WithEvents customer_txt As TextBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtduedate As TextBox
 End Class

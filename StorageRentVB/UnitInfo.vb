@@ -104,6 +104,8 @@ Public Class UnitInfo
         Finally
             con.Close()
         End Try
+        HMSMain.Show()
+        Me.Close()
     End Sub
 
     Private Sub StallGrid2_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles StallGrid2.CellContentClick
@@ -202,8 +204,8 @@ Public Class UnitInfo
         Finally
             con.Close()
         End Try
-
-
+        HMSMain.Show()
+        Me.Close()
 
     End Sub
 
